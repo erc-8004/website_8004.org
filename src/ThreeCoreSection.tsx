@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Search, Shield, Receipt, Globe, BadgeCheck, FileCheck } from 'lucide-react';
+import { Search, Shield, Receipt, Globe, BadgeCheck, FileCheck, Layers, CreditCard, Plus } from 'lucide-react';
 
 function ThreeCoreSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +31,7 @@ function ThreeCoreSection() {
     {
       id: 1,
       title: 'Discovery',
-      subtitle: 'Onchain identity and service registry',
+      subtitle: '8004 establishes a composable method for agent discovery.',
       icon: Search,
       detailTitle: 'Services are discoverable by default',
       detailText: 'Agents publish capabilities to a public registry. Any agent can find and interact with others without gatekeepers.',
@@ -40,7 +40,7 @@ function ThreeCoreSection() {
     {
       id: 2,
       title: 'Trust',
-      subtitle: 'Verifiable reputation and performance history',
+      subtitle: 'Reputation is essential for autonomous commerce and the machine to machine economy.',
       icon: Shield,
       detailTitle: 'Reputation is earned and portable',
       detailText: 'Performance history follows the agent across platforms. This helps good actors build credibility and filters out bad ones.',
@@ -48,8 +48,8 @@ function ThreeCoreSection() {
     },
     {
       id: 3,
-      title: 'Payments',
-      subtitle: 'Programmable settlement with proof of work',
+      title: 'Payment',
+      subtitle: 'x402 is an open payment protocol that enables programmable stablecoin transfers.',
       icon: Receipt,
       detailTitle: 'Payments create proof of work',
       detailText: 'Every transaction generates a verifiable receipt. This links payment to performance and establishes accountability.',
@@ -69,14 +69,14 @@ function ThreeCoreSection() {
             className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#18181b] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '0ms' }}
           >
-            Three Core Primitives
+            The Open Foundations for Agent Commerce
           </h2>
 
           <p
             className={`text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto leading-relaxed transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '100ms' }}
           >
-            Autonomous agent commerce requires three primitives: discovery of services, verification of trust, and settlement of payments.
+            Through open standards like ERC-8004 and x402, we're creating the infrastructure for autonomous agents to discover each other, build reputation, and transact securely.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 relative">
@@ -118,20 +118,7 @@ function ThreeCoreSection() {
             })}
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4 mb-8 mt-12 relative">
-            {primitives.map((_, index) => (
-              <div key={index} className="flex justify-center">
-                <div
-                  className={`w-px bg-gradient-to-b from-[#a78bfa]/30 to-[#a78bfa]/60 transition-all duration-700 relative overflow-hidden ${isVisible ? 'h-24 opacity-100' : 'h-0 opacity-0'}`}
-                  style={{ transitionDelay: `${600 + index * 50}ms` }}
-                >
-                  <div className="absolute top-0 left-0 right-0 h-3 bg-[#7c3aed] animate-flow-down"></div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
             {primitives.map((primitive, index) => {
               const DetailIcon = primitive.detailIcon;
               return (
@@ -152,6 +139,35 @@ function ThreeCoreSection() {
                 </div>
               );
             })}
+          </div>
+
+          <div
+            className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            style={{ transitionDelay: '1000ms' }}
+          >
+            <button className="flex items-center gap-3 bg-white border-2 border-[#7c3aed] text-[#7c3aed] px-8 py-4 rounded-xl font-semibold hover:bg-[#7c3aed] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              <Layers className="w-5 h-5" />
+              <span>ERC-8004</span>
+              <span className="text-sm font-normal opacity-70">Agent Identity Standard</span>
+            </button>
+            <button className="flex items-center gap-3 bg-white border-2 border-[#7c3aed] text-[#7c3aed] px-8 py-4 rounded-xl font-semibold hover:bg-[#7c3aed] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              <CreditCard className="w-5 h-5" />
+              <span>x402</span>
+              <span className="text-sm font-normal opacity-70">Payments Standard</span>
+            </button>
+            <button className="flex items-center gap-2 bg-white border-2 border-[#7c3aed] text-[#7c3aed] px-8 py-4 rounded-xl font-semibold hover:bg-[#7c3aed] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              <Plus className="w-5 h-5" />
+              <span>Upcoming Standards</span>
+            </button>
+          </div>
+
+          <div
+            className={`flex justify-center transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            style={{ transitionDelay: '1100ms' }}
+          >
+            <button className="bg-white border-2 border-[#18181b] text-[#18181b] px-12 py-4 rounded-xl font-semibold hover:bg-[#18181b] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              Learn More
+            </button>
           </div>
         </div>
       </div>
