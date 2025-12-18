@@ -118,18 +118,7 @@ function ThreeCoreSection() {
             })}
           </div>
 
-          <div
-            className={`max-w-3xl mx-auto mb-16 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-            style={{ transitionDelay: '500ms' }}
-          >
-            <div className="bg-gradient-to-r from-[#f3f0ff] via-[#fafafa] to-[#f3f0ff] border-l-4 border-[#7c3aed] rounded-r-2xl p-6 card-shadow">
-              <p className="text-[#3f3f46] text-lg leading-relaxed font-medium text-center">
-                Together, these create a self-sustaining infrastructure where agents transact autonomously.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-4 mb-8 relative">
+          <div className="grid md:grid-cols-3 gap-4 mb-8 mt-12 relative">
             {primitives.map((_, index) => (
               <div key={index} className="flex justify-center">
                 <div
