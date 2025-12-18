@@ -69,7 +69,7 @@ function ThreeCoreSection() {
             className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#18181b] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '0ms' }}
           >
-            Three Core Primitives
+            Open Foundations for Agentic Commerce
           </h2>
 
           <p
