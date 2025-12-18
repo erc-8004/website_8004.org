@@ -63,7 +63,7 @@ function ThreeCoreSection() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#7c3aed] to-transparent mx-auto mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}></div>
+          <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#7852a9] to-transparent mx-auto mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}></div>
 
           <h2
             className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#18181b] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
@@ -94,19 +94,19 @@ function ThreeCoreSection() {
               return (
                 <div
                   key={primitive.id}
-                  className={`bg-white p-10 rounded-2xl border border-[#e4e4e7] transition-all duration-300 cursor-pointer card-shadow relative group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${activeCard === primitive.id ? 'border-[#7c3aed] ring-2 ring-[#7c3aed]/20' : 'hover:border-[#a78bfa] hover:-translate-y-1 hover:card-shadow-hover'}`}
+                  className={`bg-white p-10 rounded-2xl border border-[#e4e4e7] transition-all duration-300 cursor-pointer card-shadow relative group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${activeCard === primitive.id ? 'border-[#7852a9] ring-2 ring-[#7852a9]/20' : 'hover:border-[#a78bfa] hover:-translate-y-1 hover:card-shadow-hover'}`}
                   style={{ transitionDelay: `${200 + index * 100}ms` }}
                   onClick={() => setActiveCard(activeCard === primitive.id ? null : primitive.id)}
                 >
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0.5 bg-[#7c3aed] transition-all duration-300 group-hover:w-20"></div>
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0.5 bg-[#7852a9] transition-all duration-300 group-hover:w-20"></div>
 
                   <div className="flex justify-center mb-6">
-                    <div className={`w-16 h-16 rounded-2xl bg-[#f3f0ff] flex items-center justify-center transition-all duration-300 ${activeCard === primitive.id ? 'bg-[#7c3aed] scale-110' : 'group-hover:scale-110 group-hover:bg-[#7c3aed]'}`}>
-                      <Icon className={`w-8 h-8 transition-colors duration-300 ${activeCard === primitive.id ? 'text-white' : 'text-[#7c3aed] group-hover:text-white'}`} />
+                    <div className={`w-16 h-16 rounded-2xl bg-[#f3f0ff] flex items-center justify-center transition-all duration-300 ${activeCard === primitive.id ? 'bg-[#7852a9] scale-110' : 'group-hover:scale-110 group-hover:bg-[#7852a9]'}`}>
+                      <Icon className={`w-8 h-8 transition-colors duration-300 ${activeCard === primitive.id ? 'text-white' : 'text-[#7852a9] group-hover:text-white'}`} />
                     </div>
                   </div>
 
-                  <h3 className="font-display text-2xl font-bold mb-4 text-[#7c3aed] text-center transition-colors duration-300 group-hover:text-[#6d28d9]">
+                  <h3 className="font-display text-2xl font-bold mb-4 text-[#7852a9] text-center transition-colors duration-300 group-hover:text-[#6a4a95]">
                     {primitive.title}
                   </h3>
 
@@ -125,7 +125,7 @@ function ThreeCoreSection() {
                   className={`w-px bg-gradient-to-b from-[#a78bfa]/30 to-[#a78bfa]/60 transition-all duration-700 relative overflow-hidden ${isVisible ? 'h-24 opacity-100' : 'h-0 opacity-0'}`}
                   style={{ transitionDelay: `${600 + index * 50}ms` }}
                 >
-                  <div className="absolute top-0 left-0 right-0 h-3 bg-[#7c3aed] animate-flow-down"></div>
+                  <div className="absolute top-0 left-0 right-0 h-3 bg-[#7852a9] animate-flow-down"></div>
                 </div>
               </div>
             ))}
@@ -137,11 +137,11 @@ function ThreeCoreSection() {
               return (
                 <div
                   key={primitive.id}
-                  className={`bg-white p-8 rounded-2xl border-l-4 transition-all duration-300 card-shadow ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${activeCard === primitive.id ? 'border-[#7c3aed] bg-[#f5f3ff] ring-2 ring-[#7c3aed]/20' : 'border-[#e4e4e7] hover:border-[#7c3aed] hover:bg-[#fafafa]'}`}
+                  className={`bg-white p-8 rounded-2xl border-l-4 transition-all duration-300 card-shadow ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${activeCard === primitive.id ? 'border-[#7852a9] bg-[#f5f3ff] ring-2 ring-[#7852a9]/20' : 'border-[#e4e4e7] hover:border-[#7852a9] hover:bg-[#fafafa]'}`}
                   style={{ transitionDelay: `${700 + index * 100}ms` }}
                 >
                   <div className="flex items-start gap-3 mb-4">
-                    <DetailIcon className={`w-5 h-5 mt-1 flex-shrink-0 transition-colors duration-300 ${activeCard === primitive.id ? 'text-[#7c3aed]' : 'text-[#a78bfa]'}`} />
+                    <DetailIcon className={`w-5 h-5 mt-1 flex-shrink-0 transition-colors duration-300 ${activeCard === primitive.id ? 'text-[#7852a9]' : 'text-[#a78bfa]'}`} />
                     <h4 className="font-display text-lg font-bold text-[#18181b]">
                       {primitive.detailTitle}
                     </h4>

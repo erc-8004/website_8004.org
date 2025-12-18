@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         violet: {
-          DEFAULT: '#7c3aed',
+          DEFAULT: '#7852a9',
           light: '#a78bfa',
           bg: '#f3f0ff',
         },

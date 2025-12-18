@@ -7,24 +7,24 @@ function Community() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl mx-auto text-center mb-20">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-[#7c3aed]">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-[#7852a9]">
               The Trustless Agent Community
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#7c3aed]">5,500+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#7852a9]">5,500+</div>
                 <p className="text-[#71717a] leading-relaxed">
                   developers on X in the first month
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#7c3aed]">#2</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#7852a9]">#2</div>
                 <p className="text-[#71717a] leading-relaxed">
                   most popular discussion of the year on Ethereum Magicians
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#7c3aed]">80+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#7852a9]">80+</div>
                 <p className="text-[#71717a] leading-relaxed">
                   builder groups interested in implementing specs
                 </p>
@@ -48,13 +48,13 @@ function Community() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="flex flex-col items-center gap-4">
                     <p className="text-[#71717a] text-lg h-14 flex items-center text-center">Join Community</p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#7c3aed] hover:text-[#7c3aed] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover">
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#7852a9] hover:text-[#7852a9] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover">
                       Telegram
                     </button>
                   </div>
                   <div className="flex flex-col items-center gap-4">
                     <p className="text-[#71717a] text-lg h-14 flex items-center text-center">Community Events</p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#7c3aed] hover:text-[#7c3aed] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover">
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#7852a9] hover:text-[#7852a9] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover">
                       Events calendar
                     </button>
                   </div>
@@ -64,7 +64,7 @@ function Community() {
               <div className="bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow flex items-center justify-center">
                 <div className="text-[#71717a] text-center">
                   <div className="w-24 h-24 bg-[#f3f0ff] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12 text-[#7c3aed]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-12 h-12 text-[#7852a9]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
@@ -99,7 +99,7 @@ function Community() {
               { name: 'Flashbots', img: '/flashbots.jpg' },
               { name: 'Phala', img: '/phala.png' },
             ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7c3aed] transition-colors duration-200">
+              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200">
                 <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
               </div>
             ))}
@@ -120,7 +120,7 @@ function Community() {
               { name: 'Semantic', img: '/semantic.png' },
               { name: 'Rena Labs', img: '/rena_labs.jpg' },
             ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7c3aed] transition-colors duration-200">
+              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200">
                 <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
               </div>
             ))}
@@ -147,7 +147,7 @@ function Community() {
               { name: 'Isek', img: '/isek.jpg' },
               { name: 'Karum', img: '/karum.jpg' },
             ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7c3aed] transition-colors duration-200">
+              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200">
                 <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
               </div>
             ))}
@@ -162,14 +162,14 @@ function Community() {
               { name: 'Theoriq', img: '/theoriq_(alpha_protocol).jpg' },
               { name: 'Virtuals', img: '/virtuals.jpg' },
             ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7c3aed] transition-colors duration-200">
+              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200">
                 <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
 
           <div className="text-center mb-20">
-            <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#7c3aed] hover:text-[#7c3aed] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-3 bg-white card-shadow hover:card-shadow-hover">
+            <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#7852a9] hover:text-[#7852a9] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-3 bg-white card-shadow hover:card-shadow-hover">
               Add your project
             </button>
             <p className="text-[#71717a]">
@@ -188,7 +188,7 @@ function Community() {
               href="https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#7c3aed] text-white hover:bg-[#6d28d9] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+              className="inline-block bg-[#7852a9] text-white hover:bg-[#6a4a95] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
             >
               Visit Forum
             </a>

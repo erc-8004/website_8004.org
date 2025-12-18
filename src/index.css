@@ -5,7 +5,7 @@
 :root {
   --bg-primary: #fafafa;
   --bg-white: #ffffff;
-  --accent-violet: #7c3aed;
+  --accent-violet: #7852a9;
   --accent-violet-light: #a78bfa;
   --accent-violet-bg: #f3f0ff;
   --text-primary: #18181b;
@@ -43,13 +43,13 @@ body {
 
 .grid-pattern {
   background-image:
-    linear-gradient(rgba(124, 58, 237, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 58, 237, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(120, 82, 169, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 82, 169, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 .gradient-radial {
-  background: radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(120, 82, 169, 0.06) 0%, transparent 70%);
 }
 
 .card-shadow {
@@ -82,7 +82,7 @@ body {
 }
 
 ::selection {
-  background: rgba(124, 58, 237, 0.15);
+  background: rgba(120, 82, 169, 0.15);
   color: var(--text-primary);
 }
 
@@ -107,11 +107,11 @@ body {
 
 @keyframes flow-dot {
   0% {
-    background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #7852a9 50%, transparent 100%);
     transform: translateX(-100%);
   }
   100% {
-    background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #7852a9 50%, transparent 100%);
     transform: translateX(200%);
   }
 }
