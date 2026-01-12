@@ -39,14 +39,9 @@ function Build() {
               </div>
             </div>
 
-            <div className="mb-16 py-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
-                Two Standards, One Agent Economy
-              </h2>
-              <p className="text-[#71717a] text-lg leading-relaxed max-w-3xl">
-                8004 provides the trust layer. x402 enables payments. Together, they let your agents discover, verify, and transact with each other on open rails.
-              </p>
-            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-[#18181b]">
+              Two Standards, One Agent Economy
+            </h2>
 
             <div className="space-y-16 mb-16">
               <div className="grid md:grid-cols-2 gap-8">
