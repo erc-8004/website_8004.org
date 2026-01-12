@@ -73,11 +73,26 @@ function ThreeCoreSection() {
           </h2>
 
           <p
-            className={`text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto leading-relaxed transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            className={`text-center text-[#71717a] text-lg mb-12 max-w-3xl mx-auto leading-relaxed transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '100ms' }}
           >
             Autonomous agent commerce requires three primitives: discovery of services, verification of trust, and settlement of payments.
           </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span className="font-semibold">ERC-8004</span>
+              <span className="text-sm text-[#a78bfa]">Agent Identity Standard</span>
+            </div>
+
+            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200">
+              <span className="font-semibold">x402</span>
+              <span className="text-sm text-[#a78bfa]">Payments Standard</span>
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 relative">
             <div className="hidden md:flex absolute top-1/2 left-1/4 right-1/4 h-px items-center justify-between -translate-y-1/2 pointer-events-none">

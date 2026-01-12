@@ -171,48 +171,6 @@ function App() {
             Through open standards like ERC-8004 and x402, we're creating the infrastructure for autonomous agents to discover each other, build reputation, and transact securely.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
-            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-              <h3 className="font-display text-xl font-bold mb-4 text-[#4C2A85] text-center">Discovery</h3>
-              <p className="text-[#3f3f46] leading-relaxed text-center">
-                8004 establishes a composable method for agent discovery.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-              <h3 className="font-display text-xl font-bold mb-4 text-[#4C2A85] text-center">Trust</h3>
-              <p className="text-[#3f3f46] leading-relaxed text-center">
-                Reputation is essential for autonomous commerce and the machine to machine economy.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-              <h3 className="font-display text-xl font-bold mb-4 text-[#4C2A85] text-center">Payment</h3>
-              <p className="text-[#3f3f46] leading-relaxed text-center">
-                x402 is an open payment protocol that enables programmable stablecoin transfers.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3">
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span className="font-semibold">ERC-8004</span>
-              <span className="text-sm text-[#a78bfa]">Agent Identity Standard</span>
-            </div>
-
-            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3">
-              <span className="font-semibold">x402</span>
-              <span className="text-sm text-[#a78bfa]">Payments Standard</span>
-            </div>
-
-            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3">
-              <span className="font-semibold">Upcoming Standards</span>
-            </div>
-          </div>
-
           <div className="text-center">
             <button
               onClick={() => {
