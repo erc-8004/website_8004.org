@@ -50,7 +50,7 @@ function Build() {
 
                   <h4 className="font-display text-xl font-bold mb-6 text-[#18181b]">Get started</h4>
 
-                  <ol className="space-y-4 text-[#3f3f46] mb-8">
+                  <ol className="space-y-4 text-[#3f3f46]">
                     <li className="flex gap-3">
                       <span className="font-semibold text-[#4C2A85]">1.</span>
                       <span>Read the <a href="https://eips.ethereum.org/EIPS/eip-8004" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1">EIP-8004 Specification<ExternalLink className="w-4 h-4" /></a></span>
@@ -72,21 +72,6 @@ function Build() {
                       <span>See <a href="#" className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1">Awesome-8004<ExternalLink className="w-4 h-4" /></a></span>
                     </li>
                   </ol>
-
-                  <div>
-                    <h4 className="font-display text-lg font-bold mb-4 text-[#18181b]">Supported Chains</h4>
-                    <ul className="space-y-2 text-[#3f3f46] mb-4">
-                      <li>ETH Sepolia</li>
-                      <li>Base Sepolia</li>
-                      <li>Linea Sepolia</li>
-                      <li>Polygon Amoy</li>
-                      <li>Hedera Testnet</li>
-                      <li>HyperEVM Testnet</li>
-                    </ul>
-                    <a href="https://github.com/erc-8004/erc-8004-contracts" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1">
-                      see deployed 8004 contracts<ExternalLink className="w-4 h-4" />
-                    </a>
-                  </div>
                 </div>
 
                 <div className="bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow hover:card-shadow-hover transition-shadow duration-200">
@@ -134,7 +119,7 @@ function Build() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 mb-24">
               <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
                 <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
                   <span className="text-[#71717a]">Babylon</span>
@@ -173,6 +158,40 @@ function Build() {
                   View Demo
                 </button>
               </div>
+            </div>
+
+            <div className="text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 text-[#18181b]">
+                Supported Chains
+              </h2>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-8 max-w-5xl mx-auto">
+                {[
+                  'ETH Sepolia',
+                  'Base Sepolia',
+                  'Linea Sepolia',
+                  'Polygon Amoy',
+                  'Hedera Testnet',
+                  'HyperEVM Testnet'
+                ].map((chain, index) => (
+                  <div key={index} className="flex flex-col items-center gap-3">
+                    <div className="w-20 h-20 rounded-full bg-[#f3f0ff] border-2 border-[#e4e4e7] flex items-center justify-center hover:border-[#4C2A85] transition-colors duration-200">
+                      <div className="w-10 h-10 rounded-full bg-[#4C2A85]"></div>
+                    </div>
+                    <span className="text-sm font-medium text-[#3f3f46] text-center">{chain}</span>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="https://github.com/erc-8004/erc-8004-contracts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1"
+              >
+                see deployed 8004 contracts
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
