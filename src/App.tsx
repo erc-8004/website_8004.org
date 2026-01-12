@@ -28,19 +28,19 @@ function App() {
           <div className="flex items-center gap-6 md:gap-8">
             <button
               onClick={() => setCurrentPage('8004')}
-              className="text-[#71717a] hover:text-[#7852a9] transition-colors duration-150 text-sm font-medium"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
             >
               Learn
             </button>
             <button
               onClick={() => setCurrentPage('build')}
-              className="text-[#71717a] hover:text-[#7852a9] transition-colors duration-150 text-sm font-medium"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
             >
               Build
             </button>
             <button
               onClick={() => setCurrentPage('community')}
-              className="text-[#71717a] hover:text-[#7852a9] transition-colors duration-150 text-sm font-medium"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
             >
               Community
             </button>
@@ -63,7 +63,7 @@ function App() {
         <div className="absolute inset-0 gradient-radial" />
 
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-[#7852a9] animate-fade-in-up">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-[#4C2A85] animate-fade-in-up">
             Trustless Agents
           </h1>
           <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-[#18181b] animate-fade-in-up animate-delay-100">
@@ -75,12 +75,12 @@ function App() {
           <div className="flex items-center justify-center gap-4 flex-wrap animate-fade-in-up animate-delay-300">
             <button
               onClick={() => setCurrentPage('build')}
-              className="bg-[#7852a9] text-white hover:bg-[#6a4a95] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 flex items-center gap-2 card-shadow hover:card-shadow-hover"
+              className="bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 flex items-center gap-2 card-shadow hover:card-shadow-hover"
             >
               Get Started Now
               <ArrowRight className="w-5 h-5" />
             </button>
-            <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#7852a9] hover:text-[#7852a9] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
+            <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
               Join Community
             </button>
           </div>
@@ -172,22 +172,22 @@ function App() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
-            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-              <h3 className="font-display text-xl font-bold mb-4 text-[#7852a9] text-center">Discovery</h3>
+            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
+              <h3 className="font-display text-xl font-bold mb-4 text-[#4C2A85] text-center">Discovery</h3>
               <p className="text-[#3f3f46] leading-relaxed text-center">
                 8004 establishes a composable method for agent discovery.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-              <h3 className="font-display text-xl font-bold mb-4 text-[#7852a9] text-center">Trust</h3>
+            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
+              <h3 className="font-display text-xl font-bold mb-4 text-[#4C2A85] text-center">Trust</h3>
               <p className="text-[#3f3f46] leading-relaxed text-center">
                 Reputation is essential for autonomous commerce and the machine to machine economy.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#7852a9] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-              <h3 className="font-display text-xl font-bold mb-4 text-[#7852a9] text-center">Payment</h3>
+            <div className="bg-white p-8 rounded-2xl border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
+              <h3 className="font-display text-xl font-bold mb-4 text-[#4C2A85] text-center">Payment</h3>
               <p className="text-[#3f3f46] leading-relaxed text-center">
                 x402 is an open payment protocol that enables programmable stablecoin transfers.
               </p>
@@ -195,7 +195,7 @@ function App() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-            <div className="bg-[#f3f0ff] text-[#7852a9] px-6 py-3 rounded-xl flex items-center gap-3">
+            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
@@ -203,12 +203,12 @@ function App() {
               <span className="text-sm text-[#a78bfa]">Agent Identity Standard</span>
             </div>
 
-            <div className="bg-[#f3f0ff] text-[#7852a9] px-6 py-3 rounded-xl flex items-center gap-3">
+            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3">
               <span className="font-semibold">x402</span>
               <span className="text-sm text-[#a78bfa]">Payments Standard</span>
             </div>
 
-            <div className="bg-[#f3f0ff] text-[#7852a9] px-6 py-3 rounded-xl flex items-center gap-3">
+            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3">
               <span className="font-semibold">Upcoming Standards</span>
             </div>
           </div>
@@ -219,7 +219,7 @@ function App() {
                 setCurrentPage('8004');
                 window.scrollTo(0, 0);
               }}
-              className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#7852a9] hover:text-[#7852a9] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+              className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
             >
               Learn More
             </button>
@@ -247,7 +247,7 @@ function App() {
                 { month: '2026', label: 'Validation' },
               ].map((item, index) => (
                 <div key={index} className="flex flex-col items-center group">
-                  <div className="w-20 h-20 rounded-full border-2 border-[#e4e4e7] bg-white flex items-center justify-center mb-5 relative z-10 card-shadow group-hover:border-[#7852a9] transition-colors duration-200">
+                  <div className="w-20 h-20 rounded-full border-2 border-[#e4e4e7] bg-white flex items-center justify-center mb-5 relative z-10 card-shadow group-hover:border-[#4C2A85] transition-colors duration-200">
                     <span className="text-sm font-bold text-[#18181b]">{item.month}</span>
                   </div>
                   <span className="text-[#3f3f46] font-medium text-center text-sm">{item.label}</span>
@@ -257,7 +257,7 @@ function App() {
           </div>
 
           <div className="text-center mt-20">
-            <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#7852a9] hover:text-[#7852a9] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
+            <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
               Join Community
             </button>
           </div>
@@ -290,7 +290,7 @@ function App() {
 
       <section id="build" className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#7852a9]">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#4C2A85]">
             Build Trustless Agents
           </h2>
           <p className="text-center text-[#71717a] text-lg mb-12 max-w-2xl mx-auto">
@@ -300,7 +300,7 @@ function App() {
           <div className="max-w-md mx-auto">
             <button
               onClick={() => setCurrentPage('build')}
-              className="w-full bg-[#7852a9] text-white hover:bg-[#6a4a95] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+              className="w-full bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
             >
               Build Now
             </button>
@@ -311,7 +311,7 @@ function App() {
       <footer className="py-12 bg-[#fafafa] border-t border-[#e4e4e7]">
         <div className="container mx-auto px-6 text-center">
           <p className="text-[#71717a]">
-            <span className="text-[#7852a9] font-semibold">Trustless Agents</span> | Building the open, trustless agentic web
+            <span className="text-[#4C2A85] font-semibold">Trustless Agents</span> | Building the open, trustless agentic web
           </p>
         </div>
       </footer>

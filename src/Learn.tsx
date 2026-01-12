@@ -7,7 +7,7 @@ function Learn() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#7852a9]">Learn about 8004 & x402</h1>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#4C2A85]">Learn about 8004 & x402</h1>
             <p className="text-lg md:text-xl text-[#71717a] leading-relaxed max-w-3xl mx-auto">
               Open Agent Standards enable secure, trustless coordination in autonomous economies.
             </p>
@@ -31,8 +31,8 @@ function Learn() {
                 { title: 'Trust', desc: 'Verifiable reputation and performance history' },
                 { title: 'Payments', desc: 'Programmable settlement with proof of work' },
               ].map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-2xl border border-[#e4e4e7] card-shadow hover:border-[#7852a9] transition-colors duration-200 text-center">
-                  <h4 className="font-display font-bold text-lg text-[#7852a9] mb-3">{item.title}</h4>
+                <div key={index} className="bg-white p-6 rounded-2xl border border-[#e4e4e7] card-shadow hover:border-[#4C2A85] transition-colors duration-200 text-center">
+                  <h4 className="font-display font-bold text-lg text-[#4C2A85] mb-3">{item.title}</h4>
                   <p className="text-[#71717a]">{item.desc}</p>
                 </div>
               ))}
@@ -100,7 +100,7 @@ function Learn() {
                   { num: '4', title: 'Reputation is earnt', p1: 'After an agent completes a task, moderation systems will provide feedback.', p2: "This feedback is public and tied to the agent's identity, building a reputation over time." },
                 ].map((item) => (
                   <div key={item.num} className="bg-white p-6 rounded-2xl border border-[#e4e4e7] card-shadow relative">
-                    <div className="absolute top-4 left-4 w-8 h-8 bg-[#7852a9] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="absolute top-4 left-4 w-8 h-8 bg-[#4C2A85] text-white rounded-full flex items-center justify-center font-bold text-sm">
                       {item.num}
                     </div>
                     <h3 className="font-display text-lg font-bold mb-4 text-[#18181b] pt-8">{item.title}</h3>
@@ -113,7 +113,7 @@ function Learn() {
               <div className="relative pt-8 pb-8">
                 <div className="flex justify-center relative z-10">
                   <div className="bg-[#f3f0ff] px-6 py-3 rounded-xl inline-block">
-                    <p className="text-sm font-semibold text-[#7852a9]">Feedback loop</p>
+                    <p className="text-sm font-semibold text-[#4C2A85]">Feedback loop</p>
                   </div>
                 </div>
               </div>
@@ -159,7 +159,7 @@ function Learn() {
                         'Commerce scales autonomously with built-in accountability',
                       ].map((item, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="mr-3 mt-2 w-1.5 h-1.5 bg-[#7852a9] rounded-full flex-shrink-0"></span>
+                          <span className="mr-3 mt-2 w-1.5 h-1.5 bg-[#4C2A85] rounded-full flex-shrink-0"></span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -178,7 +178,7 @@ function Learn() {
                     { title: 'Healthcare & wellness', desc: 'AI assists with scheduling, triage, and monitoring with proof and validation.' },
                     { title: 'Connected devices', desc: 'Devices act on behalf of users, only trusted agents are allowed to take action.' },
                   ].map((item, index) => (
-                    <div key={index} className="bg-white border border-[#e4e4e7] rounded-2xl p-6 card-shadow hover:border-[#7852a9] transition-colors duration-200">
+                    <div key={index} className="bg-white border border-[#e4e4e7] rounded-2xl p-6 card-shadow hover:border-[#4C2A85] transition-colors duration-200">
                       <h3 className="font-display font-bold text-[#18181b] mb-2">{item.title}</h3>
                       <p className="text-sm text-[#71717a] leading-relaxed">{item.desc}</p>
                     </div>
