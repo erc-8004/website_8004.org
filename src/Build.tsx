@@ -39,6 +39,15 @@ function Build() {
               </div>
             </div>
 
+            <div className="text-center mb-16 py-12">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[#18181b]">
+                The Open Foundations for Agent Commerce
+              </h2>
+              <p className="text-[#71717a] text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
+                Through open standards like ERC-8004 and x402, we're creating the infrastructure for autonomous agents to discover each other, build reputation, and transact securely.
+              </p>
+            </div>
+
             <div className="space-y-16 mb-16">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow hover:card-shadow-hover transition-shadow duration-200">
