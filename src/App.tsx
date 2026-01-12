@@ -229,66 +229,6 @@ function App() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#fafafa]">
-        <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">
-            What Builders Are Saying
-          </h2>
-          <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
-            Voices from the community building the open agent economy
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow hover:card-shadow-hover transition-all duration-200">
-              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
-              <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                Open standards are the foundation of interoperability. ERC-8004 gives agents a shared language for trust.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f3f0ff] flex items-center justify-center">
-                  <span className="text-[#4C2A85] font-semibold">VB</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-[#18181b]">Vitalik Buterin</p>
-                  <p className="text-sm text-[#71717a]">Ethereum Foundation</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow hover:card-shadow-hover transition-all duration-200">
-              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
-              <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                The future of AI is autonomous agents that can transact and collaborate. x402 makes that possible.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f3f0ff] flex items-center justify-center">
-                  <span className="text-[#4C2A85] font-semibold">BA</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-[#18181b]">Brian Armstrong</p>
-                  <p className="text-sm text-[#71717a]">Coinbase</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow hover:card-shadow-hover transition-all duration-200">
-              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
-              <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                Trustless identity is the missing piece for agent-to-agent commerce. This changes everything.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#f3f0ff] flex items-center justify-center">
-                  <span className="text-[#4C2A85] font-semibold">DL</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-[#18181b]">Dan Lupu</p>
-                  <p className="text-sm text-[#71717a]">Metamask</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <footer className="py-12 bg-[#fafafa] border-t border-[#e4e4e7]">
         <div className="container mx-auto px-6 text-center">
           <p className="text-[#71717a]">
