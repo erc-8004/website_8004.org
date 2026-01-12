@@ -80,18 +80,27 @@ function ThreeCoreSection() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
-            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200">
+            <a
+              href="https://github.com/erc-8004"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200"
+            >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
               <span className="font-semibold">ERC-8004</span>
               <span className="text-sm text-[#a78bfa]">Agent Identity Standard</span>
-            </div>
+            </a>
 
-            <div className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200">
-              <span className="font-semibold">x402</span>
-              <span className="text-sm text-[#a78bfa]">Payments Standard</span>
-            </div>
+            <a
+              href="https://sdk.ag0.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200"
+            >
+              <span className="font-semibold">Agent0 SDK</span>
+            </a>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 relative">
