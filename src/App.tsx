@@ -185,43 +185,6 @@ function App() {
         </div>
       </section>
 
-      <section id="timeline" className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-[#18181b]">Timeline</h2>
-          <p className="text-center text-[#71717a] text-lg mb-20 max-w-2xl mx-auto">
-            Our roadmap for building the open foundation for autonomous agents
-          </p>
-
-          <div className="max-w-5xl mx-auto relative">
-            <div className="absolute top-10 left-[10%] right-[10%] h-px bg-[#e4e4e7] hidden md:block"></div>
-
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-4 relative">
-              {[
-                { month: 'Sep', label: 'Specification' },
-                { month: 'Oct', label: 'Implementation' },
-                { month: 'Nov', label: 'SDK Development' },
-                { month: 'Dec', label: 'Discovery' },
-                { month: '2026', label: 'Reputation' },
-                { month: '2026', label: 'Validation' },
-              ].map((item, index) => (
-                <div key={index} className="flex flex-col items-center group">
-                  <div className="w-20 h-20 rounded-full border-2 border-[#e4e4e7] bg-white flex items-center justify-center mb-5 relative z-10 card-shadow group-hover:border-[#4C2A85] transition-colors duration-200">
-                    <span className="text-sm font-bold text-[#18181b]">{item.month}</span>
-                  </div>
-                  <span className="text-[#3f3f46] font-medium text-center text-sm">{item.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="text-center mt-20">
-            <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
-              Join Community
-            </button>
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Organized by</h2>
