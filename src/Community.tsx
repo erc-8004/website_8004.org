@@ -45,17 +45,11 @@ function Community() {
                   </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex justify-center">
                   <div className="flex flex-col items-center gap-4">
                     <p className="text-[#71717a] text-lg h-14 flex items-center text-center">Join Community</p>
                     <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover">
                       Telegram
-                    </button>
-                  </div>
-                  <div className="flex flex-col items-center gap-4">
-                    <p className="text-[#71717a] text-lg h-14 flex items-center text-center">Community Events</p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover">
-                      Events calendar
                     </button>
                   </div>
                 </div>
