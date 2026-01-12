@@ -94,12 +94,12 @@ function ThreeCoreSection() {
             </a>
 
             <a
-              href="https://sdk.ag0.xyz/"
+              href="https://www.x402.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#f3f0ff] text-[#4C2A85] px-6 py-3 rounded-xl flex items-center gap-3 card-shadow hover:card-shadow-hover transition-all duration-200"
             >
-              <span className="font-semibold">Agent0 SDK</span>
+              <span className="font-semibold">x402</span>
             </a>
           </div>
 
