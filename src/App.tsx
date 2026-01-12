@@ -23,7 +23,7 @@ function App() {
             onClick={() => setCurrentPage('home')}
             className="cursor-pointer hover:opacity-80 transition-opacity duration-150"
           >
-            <img src="/logo_8004.png" alt="Trustless Agents" className="h-12" />
+            <img src="/8004_logo_purple copy.png" alt="Trustless Agents" className="h-12" />
           </button>
           <div className="flex items-center gap-6 md:gap-8">
             <button
