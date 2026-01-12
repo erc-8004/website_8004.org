@@ -39,12 +39,12 @@ function Build() {
               </div>
             </div>
 
-            <div className="text-center mb-16 py-12">
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[#18181b]">
-                The Open Foundations for Agent Commerce
+            <div className="mb-16 py-12">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
+                Two Standards, One Agent Economy
               </h2>
-              <p className="text-[#71717a] text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
-                Through open standards like ERC-8004 and x402, we're creating the infrastructure for autonomous agents to discover each other, build reputation, and transact securely.
+              <p className="text-[#71717a] text-lg leading-relaxed max-w-3xl">
+                8004 provides the trust layer. x402 enables payments. Together, they let your agents discover, verify, and transact with each other on open rails.
               </p>
             </div>
 
