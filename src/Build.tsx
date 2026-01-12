@@ -204,27 +204,24 @@ function Build() {
       <section className="py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow">
-                <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
-                  Builder program waitlist
-                </h2>
-                <p className="text-[#71717a] leading-relaxed mb-6">
-                  Get hands-on support, technical resources, and direct access to the experts.
-                </p>
-                <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-6 bg-white card-shadow">
-                  Apply now
-                </button>
-                <div className="w-full">
-                  <img
-                    src="/ta6.png"
-                    alt="Agent building and securing the future"
-                    className="w-full h-auto rounded-xl"
-                  />
-                </div>
+            <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow max-w-3xl">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
+                Builder program waitlist
+              </h2>
+              <p className="text-[#71717a] leading-relaxed mb-6">
+                Get hands-on support, technical resources, and direct access to the experts.
+              </p>
+              <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-6 bg-white card-shadow">
+                Apply now
+              </button>
+              <div className="w-full mb-8">
+                <img
+                  src="/ta6.png"
+                  alt="Agent building and securing the future"
+                  className="w-full h-auto rounded-xl"
+                />
               </div>
-
-              <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow flex items-center justify-center">
+              <div className="pt-8 border-t border-[#e4e4e7]">
                 <p className="text-[#a1a1aa] text-center">Details on the builder program coming soon</p>
               </div>
             </div>
