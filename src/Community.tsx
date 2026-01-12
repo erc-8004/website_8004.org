@@ -69,6 +69,66 @@ function Community() {
         </div>
       </section>
 
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">
+            Builder Perspectives
+          </h2>
+          <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
+            Voices from the teams building with open agent standards
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
+              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
+              <p className="text-[#3f3f46] mb-6 leading-relaxed">
+                ERC-8004 creates the trust layer we've been missing. It's the foundation for agent-to-agent commerce at scale.
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                  <img src="/olas.jpg" alt="Olas" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#18181b]">David Minarsch</p>
+                  <p className="text-sm text-[#71717a]">Olas</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
+              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
+              <p className="text-[#3f3f46] mb-6 leading-relaxed">
+                Open standards are how we build an ecosystem, not just products. This is infrastructure for the next decade.
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                  <img src="/phala.png" alt="Phala" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#18181b]">Marvin Tong</p>
+                  <p className="text-sm text-[#71717a]">Phala Network</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
+              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
+              <p className="text-[#3f3f46] mb-6 leading-relaxed">
+                We finally have a common language for agent identity. This unlocks interoperability across the entire space.
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                  <img src="/cambrian.jpg" alt="Cambrian" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#18181b]">James Gannon</p>
+                  <p className="text-sm text-[#71717a]">Cambrian</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 grid-pattern opacity-50" />
 
