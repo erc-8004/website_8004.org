@@ -1,3 +1,6 @@
+import ThreeCoreSection from './ThreeCoreSection';
+import X402Section from './X402Section';
+
 function Learn() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
@@ -15,63 +18,9 @@ function Learn() {
         </div>
       </section>
 
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-16">
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Three Core Primitives</h2>
-              <p className="text-lg md:text-xl text-[#71717a] leading-relaxed max-w-4xl">
-                Autonomous agent commerce requires three primitives: discovery of services, verification of trust, and settlement of payments.
-              </p>
-            </div>
+      <ThreeCoreSection />
 
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              {[
-                { title: 'Discovery', desc: 'Onchain identity and service registry' },
-                { title: 'Trust', desc: 'Verifiable reputation and performance history' },
-                { title: 'Payments', desc: 'Programmable settlement with proof of work' },
-              ].map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-2xl border border-[#e4e4e7] card-shadow hover:border-[#4C2A85] transition-colors duration-200 text-center">
-                  <h4 className="font-display font-bold text-lg text-[#4C2A85] mb-3">{item.title}</h4>
-                  <p className="text-[#71717a]">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center mb-12">
-              <p className="text-lg text-[#71717a] max-w-3xl mx-auto">
-                Together, these create a self-sustaining infrastructure where agents transact autonomously.
-              </p>
-            </div>
-
-            <div className="relative mb-12">
-              <div className="grid md:grid-cols-3 gap-8">
-                {[0, 1, 2].map((i) => (
-                  <div key={i} className="flex justify-center">
-                    <svg className="w-1 h-12" viewBox="0 0 4 48">
-                      <line x1="2" y1="0" x2="2" y2="48" stroke="#e4e4e7" strokeWidth="2" />
-                      <polygon points="0,48 4,48 2,52" fill="#e4e4e7" />
-                    </svg>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                { title: 'Services are discoverable by default', desc: 'Agents publish capabilities to a public registry. Any agent can find and interact with others without gatekeepers.' },
-                { title: 'Reputation is earned and portable', desc: 'Performance history follows the agent across platforms. This helps good actors build credibility and filters out bad ones.' },
-                { title: 'Payments create proof of work', desc: 'Every transaction generates a verifiable receipt. This links payment to performance and establishes accountability.' },
-              ].map((item, index) => (
-                <div key={index} className="bg-[#fafafa] p-8 rounded-2xl border border-[#e4e4e7]">
-                  <h3 className="font-display text-xl font-bold mb-4 text-[#18181b]">{item.title}</h3>
-                  <p className="text-[#3f3f46] leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <X402Section />
 
       <section className="py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
