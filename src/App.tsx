@@ -175,24 +175,6 @@ function App() {
 
       <ThreeCoreSection />
 
-      <section id="economy" className="py-24 bg-[#fafafa]">
-        <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#18181b]">The Open Foundations for Agent Commerce</h2>
-          <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
-            Through open standards like ERC-8004 and x402, we're creating the infrastructure for autonomous agents to discover each other, build reputation, and transact securely.
-          </p>
-
-          <div className="text-center">
-            <button
-              onClick={() => navigateToPage('8004')}
-              className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Organized by</h2>
