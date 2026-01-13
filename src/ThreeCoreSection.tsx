@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Search, Shield, Receipt } from 'lucide-react';
+import { Search, Shield, Receipt, Globe, BadgeCheck, FileCheck } from 'lucide-react';
 
 function ThreeCoreSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,18 +33,27 @@ function ThreeCoreSection() {
       title: 'Discovery',
       subtitle: 'Onchain identity and service registry',
       icon: Search,
+      detailTitle: 'Services are discoverable by default',
+      detailText: 'Agents publish capabilities to a public registry. Any agent can find and interact with others without gatekeepers.',
+      detailIcon: Globe,
     },
     {
       id: 2,
       title: 'Trust',
       subtitle: 'Verifiable reputation and performance history',
       icon: Shield,
+      detailTitle: 'Reputation is earned and portable',
+      detailText: 'Performance history follows the agent across platforms. This helps good actors build credibility and filters out bad ones.',
+      detailIcon: BadgeCheck,
     },
     {
       id: 3,
       title: 'Payments',
       subtitle: 'Programmable settlement with proof of work',
       icon: Receipt,
+      detailTitle: 'Payments create proof of work',
+      detailText: 'Every transaction generates a verifiable receipt. This links payment to performance and establishes accountability.',
+      detailIcon: FileCheck,
     },
   ];
 
@@ -60,7 +69,7 @@ function ThreeCoreSection() {
             className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#18181b] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '0ms' }}
           >
-            What is 8004?
+            Open Foundations for Agentic Commerce
           </h2>
 
           <p
@@ -133,10 +142,40 @@ function ThreeCoreSection() {
             })}
           </div>
 
-          <div className="text-center mt-12">
-            <p className="text-lg text-[#71717a] max-w-3xl mx-auto">
-              Together, these create a self-sustaining infrastructure where agents transact autonomously.
-            </p>
+          <div className="grid md:grid-cols-3 gap-4 mb-8 mt-12 relative">
+            {primitives.map((_, index) => (
+              <div key={index} className="flex justify-center">
+                <div
+                  className={`w-px bg-gradient-to-b from-[#a78bfa]/30 to-[#a78bfa]/60 transition-all duration-700 relative overflow-hidden ${isVisible ? 'h-24 opacity-100' : 'h-0 opacity-0'}`}
+                  style={{ transitionDelay: `${600 + index * 50}ms` }}
+                >
+                  <div className="absolute top-0 left-0 right-0 h-3 bg-[#4C2A85] animate-flow-down"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {primitives.map((primitive, index) => {
+              const DetailIcon = primitive.detailIcon;
+              return (
+                <div
+                  key={primitive.id}
+                  className={`bg-white p-8 rounded-2xl border-l-4 transition-all duration-300 card-shadow ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${activeCard === primitive.id ? 'border-[#4C2A85] bg-[#f5f3ff] ring-2 ring-[#4C2A85]/20' : 'border-[#e4e4e7] hover:border-[#4C2A85] hover:bg-[#fafafa]'}`}
+                  style={{ transitionDelay: `${700 + index * 100}ms` }}
+                >
+                  <div className="flex items-start gap-3 mb-4">
+                    <DetailIcon className={`w-5 h-5 mt-1 flex-shrink-0 transition-colors duration-300 ${activeCard === primitive.id ? 'text-[#4C2A85]' : 'text-[#a78bfa]'}`} />
+                    <h4 className="font-display text-lg font-bold text-[#18181b]">
+                      {primitive.detailTitle}
+                    </h4>
+                  </div>
+                  <p className="text-[#71717a] leading-relaxed">
+                    {primitive.detailText}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
