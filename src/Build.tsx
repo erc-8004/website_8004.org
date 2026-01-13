@@ -8,7 +8,7 @@ function Build() {
         <div className="absolute inset-0 gradient-radial" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-5xl mx-auto text-center mb-12">
+          <div className="max-w-5xl mx-auto text-center mb-[5px]">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#4C2A85]">
               Build Trustless Agents
             </h1>
