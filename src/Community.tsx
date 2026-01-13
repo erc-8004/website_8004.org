@@ -231,13 +231,13 @@ function Community() {
           </div>
 
           <div className="max-w-3xl mx-auto mb-20 bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#18181b] mb-6">
-              Forum
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#18181b] mb-6 text-center">
+              Engage
             </h2>
-            <p className="text-[#71717a] mb-8 text-lg">
+            <p className="text-[#71717a] mb-8 text-lg text-center">
               Join the conversation on Ethereum Magicians
             </p>
-            <div className="flex items-center gap-4 flex-wrap">
+            <div className="flex items-center justify-center gap-4 flex-wrap">
               <a
                 href="https://eips.ethereum.org/EIPS/eip-8004"
                 target="_blank"
