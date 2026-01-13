@@ -193,10 +193,10 @@ function App() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center max-w-4xl mx-auto">
             {[
-              { name: 'Google', img: '/google.jpg' },
-              { name: 'Coinbase', img: '/coinbase.png' },
               { name: 'Metamask', img: '/metamask.jpg' },
               { name: 'Ethereum Foundation', img: '/ef.jpg' },
+              { name: 'Google', img: '/google.jpg' },
+              { name: 'Coinbase', img: '/coinbase.png' },
             ].map((org, index) => (
               <div key={index} className="flex flex-col items-center gap-4">
                 <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center card-shadow overflow-hidden">
