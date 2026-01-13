@@ -145,15 +145,15 @@ function FAQ() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#fafafa]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto space-y-12">
+      <section className="py-16 sm:py-24 bg-[#fafafa]">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12">
             {faqSections.map((section, sectionIndex) => (
               <div key={sectionIndex} className="space-y-4">
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-[#4C2A85] mb-6">
+                <h2 className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-[#4C2A85] mb-4 sm:mb-6">
                   {section.title}
                 </h2>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {section.questions.map((faq) => (
                     <div
                       key={faq.id}
@@ -161,9 +161,9 @@ function FAQ() {
                     >
                       <button
                         onClick={() => setOpenIndex(openIndex === faq.id ? null : faq.id)}
-                        className="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-200"
+                        className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left transition-colors duration-200 gap-3"
                       >
-                        <h3 className="font-display font-bold text-lg text-[#18181b] pr-4">
+                        <h3 className="font-display font-semibold text-base sm:text-lg text-[#18181b] leading-snug" style={{ textWrap: 'balance' } as React.CSSProperties}>
                           {faq.question}
                         </h3>
                         <ChevronDown
@@ -177,47 +177,47 @@ function FAQ() {
                           openIndex === faq.id ? 'max-h-[1000px]' : 'max-h-0'
                         }`}
                       >
-                        <div className="px-6 pb-5 pt-0">
+                        <div className="px-4 sm:px-6 pb-4 sm:pb-5 pt-0">
                           {faq.answer === 'use-cases' ? (
-                            <div className="space-y-4">
-                              <div className="flex gap-3">
-                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
-                                <div>
-                                  <span className="font-semibold text-[#18181b]">If you are an agent builder:</span>
+                            <div className="space-y-3 sm:space-y-4">
+                              <div className="flex gap-2 sm:gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0 text-sm sm:text-base">→</span>
+                                <div className="text-sm sm:text-base">
+                                  <span className="font-semibold text-[#18181b]">Agent builder:</span>
                                   <span className="text-[#3f3f46]"> discoverability and portability for your agents/services, i.e., more visibility, users, and customers.</span>
                                 </div>
                               </div>
-                              <div className="flex gap-3">
-                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
-                                <div>
-                                  <span className="font-semibold text-[#18181b]">If you are a user:</span>
+                              <div className="flex gap-2 sm:gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0 text-sm sm:text-base">→</span>
+                                <div className="text-sm sm:text-base">
+                                  <span className="font-semibold text-[#18181b]">User:</span>
                                   <span className="text-[#3f3f46]"> to find which agents and services to use, and which ones to trust.</span>
                                 </div>
                               </div>
-                              <div className="flex gap-3">
-                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
-                                <div>
-                                  <span className="font-semibold text-[#18181b]">If you are a platform builder:</span>
-                                  <span className="text-[#3f3f46]"> you can build explorers, platforms, and marketplaces using the registration and trust data of hundreds of agents, instead of starting from zero (solving the cold start problem).</span>
+                              <div className="flex gap-2 sm:gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0 text-sm sm:text-base">→</span>
+                                <div className="text-sm sm:text-base">
+                                  <span className="font-semibold text-[#18181b]">Platform builder:</span>
+                                  <span className="text-[#3f3f46]"> build explorers, platforms, and marketplaces using the registration and trust data of hundreds of agents, instead of starting from zero.</span>
                                 </div>
                               </div>
-                              <div className="flex gap-3">
-                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
-                                <div>
-                                  <span className="font-semibold text-[#18181b]">If you are in financial credit, trading, or reputation:</span>
-                                  <span className="text-[#3f3f46]"> you can build ranking and scoring algorithms based on ERC-8004's public database.</span>
+                              <div className="flex gap-2 sm:gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0 text-sm sm:text-base">→</span>
+                                <div className="text-sm sm:text-base">
+                                  <span className="font-semibold text-[#18181b]">Finance/reputation:</span>
+                                  <span className="text-[#3f3f46]"> build ranking and scoring algorithms based on ERC-8004's public database.</span>
                                 </div>
                               </div>
-                              <div className="flex gap-3">
-                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
-                                <div>
-                                  <span className="font-semibold text-[#18181b]">If you are a researcher:</span>
-                                  <span className="text-[#3f3f46]"> you can do research (and in the future even post-train models) on the open 8004 dataset.</span>
+                              <div className="flex gap-2 sm:gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0 text-sm sm:text-base">→</span>
+                                <div className="text-sm sm:text-base">
+                                  <span className="font-semibold text-[#18181b]">Researcher:</span>
+                                  <span className="text-[#3f3f46]"> do research (and in the future even post-train models) on the open 8004 dataset.</span>
                                 </div>
                               </div>
                             </div>
                           ) : (
-                            <p className="text-[#3f3f46] leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                            <p className="text-[#3f3f46] text-sm sm:text-base leading-relaxed whitespace-pre-line">{faq.answer}</p>
                           )}
                         </div>
                       </div>
