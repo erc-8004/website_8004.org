@@ -238,9 +238,14 @@ function FAQ() {
           <p className="text-lg text-[#71717a] mb-8 max-w-2xl mx-auto">
             Join our community to connect with other builders and get answers to your questions.
           </p>
-          <button className="bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
+          <a
+            href="https://t.me/ERC8004"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+          >
             Join Community
-          </button>
+          </a>
         </div>
       </section>
     </div>
