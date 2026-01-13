@@ -16,7 +16,7 @@ function FAQ() {
         {
           id: 'general-2',
           question: 'Why should I use it?',
-          answer: 'If you are an agent builder → discoverability and portability for your agents/services, i.e., more visibility, users, and customers.\n\nIf you are a user → to find which agents and services to use, and which ones to trust.\n\nIf you are a platform builder → you can build explorers, platforms, and marketplaces using the registration and trust data of hundreds of agents, instead of starting from zero (solving the cold start problem).\n\nIf you are in financial credit, trading, or reputation → you can build ranking and scoring algorithms based on ERC-8004\'s public database.\n\nIf you are a researcher → you can do research (and in the future even post-train models) on the open 8004 dataset.',
+          answer: 'use-cases',
         },
         {
           id: 'general-3',
@@ -178,7 +178,47 @@ function FAQ() {
                         }`}
                       >
                         <div className="px-6 pb-5 pt-0">
-                          <p className="text-[#3f3f46] leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                          {faq.answer === 'use-cases' ? (
+                            <div className="space-y-4">
+                              <div className="flex gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
+                                <div>
+                                  <span className="font-semibold text-[#18181b]">If you are an agent builder:</span>
+                                  <span className="text-[#3f3f46]"> discoverability and portability for your agents/services, i.e., more visibility, users, and customers.</span>
+                                </div>
+                              </div>
+                              <div className="flex gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
+                                <div>
+                                  <span className="font-semibold text-[#18181b]">If you are a user:</span>
+                                  <span className="text-[#3f3f46]"> to find which agents and services to use, and which ones to trust.</span>
+                                </div>
+                              </div>
+                              <div className="flex gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
+                                <div>
+                                  <span className="font-semibold text-[#18181b]">If you are a platform builder:</span>
+                                  <span className="text-[#3f3f46]"> you can build explorers, platforms, and marketplaces using the registration and trust data of hundreds of agents, instead of starting from zero (solving the cold start problem).</span>
+                                </div>
+                              </div>
+                              <div className="flex gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
+                                <div>
+                                  <span className="font-semibold text-[#18181b]">If you are in financial credit, trading, or reputation:</span>
+                                  <span className="text-[#3f3f46]"> you can build ranking and scoring algorithms based on ERC-8004's public database.</span>
+                                </div>
+                              </div>
+                              <div className="flex gap-3">
+                                <span className="text-[#4C2A85] font-semibold mt-0.5 flex-shrink-0">→</span>
+                                <div>
+                                  <span className="font-semibold text-[#18181b]">If you are a researcher:</span>
+                                  <span className="text-[#3f3f46]"> you can do research (and in the future even post-train models) on the open 8004 dataset.</span>
+                                </div>
+                              </div>
+                            </div>
+                          ) : (
+                            <p className="text-[#3f3f46] leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                          )}
                         </div>
                       </div>
                     </div>
