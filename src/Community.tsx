@@ -40,26 +40,29 @@ function Community() {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow">
-                <div className="mb-10">
-                  <h2 className="font-display text-3xl md:text-4xl font-bold text-[#18181b]">
-                    Join the Community
-                  </h2>
-                </div>
-
-                <div className="flex justify-center">
+              <div className="bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow flex flex-col justify-center min-h-[320px]">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-[#18181b] mb-4">
+                  Join the Community
+                </h2>
+                <p className="text-[#71717a] text-lg mb-8">
+                  Connect with builders, researchers, and teams shaping the future of autonomous agents.
+                </p>
+                <div>
                   <a
                     href="https://t.me/ERC8004"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 whitespace-nowrap bg-white card-shadow hover:card-shadow-hover"
+                    className="inline-flex items-center gap-2 bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
                   >
-                    8004 builders
+                    <span>8004 builders</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </a>
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl border border-[#e4e4e7] card-shadow overflow-hidden">
+              <div className="bg-white rounded-2xl border border-[#e4e4e7] card-shadow overflow-hidden min-h-[320px]">
                 <img
                   src="/community2_under_5mb.jpg"
                   alt="Community building together"
