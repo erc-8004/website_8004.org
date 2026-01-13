@@ -214,15 +214,17 @@ function Build() {
               <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-6 bg-white card-shadow">
                 Apply now
               </button>
-              <div className="w-full mb-8">
-                <img
-                  src="/ta6.png"
-                  alt="Agent building and securing the future"
-                  className="w-full h-auto rounded-xl"
-                />
-              </div>
-              <div className="pt-8 border-t border-[#e4e4e7]">
-                <p className="text-[#a1a1aa] text-center">Details on the builder program coming soon</p>
+              <div className="pt-8 border-t border-[#e4e4e7] flex items-center gap-8">
+                <div className="flex-shrink-0">
+                  <img
+                    src="/ta6.png"
+                    alt="Agent building and securing the future"
+                    className="w-48 h-auto rounded-xl"
+                  />
+                </div>
+                <div className="flex-1">
+                  <p className="text-[#a1a1aa]">Details on the builder program coming soon</p>
+                </div>
               </div>
             </div>
           </div>
