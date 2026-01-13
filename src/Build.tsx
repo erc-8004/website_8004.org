@@ -40,7 +40,7 @@ function Build() {
             </div>
 
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-[#18181b]">
-              Two Standards, One Agent Economy
+              What is 8004?
             </h2>
 
             <div className="space-y-16 mb-16">
