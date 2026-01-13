@@ -239,12 +239,12 @@ function Community() {
             </p>
             <div className="flex items-center gap-4 flex-wrap">
               <a
-                href="https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098"
+                href="https://eips.ethereum.org/EIPS/eip-8004"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
               >
-                Visit Forum
+                Read Spec
               </a>
               <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
                 Join Community
