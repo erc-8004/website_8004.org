@@ -1,3 +1,5 @@
+import CommunityEvents from './CommunityEvents';
+
 function Community() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
@@ -229,6 +231,8 @@ function Community() {
               Include your agent in our directory
             </p>
           </div>
+
+          <CommunityEvents />
 
           <div className="max-w-3xl mx-auto mb-20 bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-[#18181b] mb-6 text-center">
