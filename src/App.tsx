@@ -33,12 +33,6 @@ function App() {
           </button>
           <div className="flex items-center gap-6 md:gap-8">
             <button
-              onClick={() => navigateToPage('8004')}
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
-            >
-              Learn
-            </button>
-            <button
               onClick={() => navigateToPage('build')}
               className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
             >
