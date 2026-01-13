@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import Learn from './Learn';
 import Build from './Build';
 import Community from './Community';
+import FAQ from './FAQ';
 import ThreeCoreSection from './ThreeCoreSection';
 
 function App() {
@@ -44,6 +45,12 @@ function App() {
             >
               Community
             </button>
+            <button
+              onClick={() => setCurrentPage('faq')}
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+            >
+              FAQ
+            </button>
           </div>
         </nav>
       </header>
@@ -56,6 +63,8 @@ function App() {
         <Learn />
       ) : currentPage === 'community' ? (
         <Community />
+      ) : currentPage === 'faq' ? (
+        <FAQ />
       ) : (
         <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
