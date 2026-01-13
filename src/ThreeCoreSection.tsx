@@ -69,7 +69,7 @@ function ThreeCoreSection() {
             className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#18181b] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '0ms' }}
           >
-            Open Foundations for Agentic Commerce
+            What is 8004?
           </h2>
 
           <p
@@ -140,6 +140,15 @@ function ThreeCoreSection() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-20 mb-20">
+            <h3
+              className={`font-display text-2xl md:text-3xl font-bold text-center mb-6 text-[#18181b] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+              style={{ transitionDelay: '500ms' }}
+            >
+              What is x402?
+            </h3>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4 mb-8 mt-12 relative">
