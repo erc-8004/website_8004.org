@@ -254,7 +254,7 @@ function Community() {
                 Read Spec
               </a>
               <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
-                Join Community
+                8004 Builders
               </button>
             </div>
           </div>
