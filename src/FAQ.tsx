@@ -139,7 +139,7 @@ function FAQ() {
               Frequently Asked Questions
             </h1>
             <p className="text-lg md:text-xl text-[#71717a] leading-relaxed">
-              Find answers to common questions about Trustless Agents, open standards, and the agent economy.
+              Find answers to common questions about 8004.
             </p>
           </div>
         </div>
