@@ -135,6 +135,32 @@ function Build() {
               </div>
             </div>
 
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Deployment & Best Practices</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Deploy on your chain</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Want to bring ERC-8004 to your blockchain? Contact us to coordinate singleton deployment.
+                    </p>
+                    <a href="mailto:team@8004.org" className="bg-[#4C2A85] text-white hover:bg-[#412471] px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover inline-block">
+                      Email team@8004.org
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Building on ERC-8004</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Review our recommended patterns for registration and implementation.
+                    </p>
+                    <a href="https://sdk.ag0.xyz/2-best-practices/2-1-intro/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Best practices <span className="ml-0.5">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="mb-12">
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
                 Demo Projects
