@@ -185,7 +185,7 @@ function Build() {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center hidden">
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 text-[#18181b]">
                 Supported Chains
               </h2>
