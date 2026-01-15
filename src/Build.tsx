@@ -166,16 +166,16 @@ function Build() {
                 Demo Projects
               </h2>
               <p className="text-lg text-[#71717a]">
-                Go 0-1 with Open Standards for your agent
+                Go 0-1 with 8004
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-24">
               <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
                 <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                  <span className="text-[#71717a]">Babylon</span>
+                  <span className="text-[#71717a]">Create 8004 agent</span>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Babylon</h3>
+                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 agent</h3>
                 <p className="text-[#71717a] mb-6 leading-relaxed">
                   Brief description of the demo project and what it demonstrates.
                 </p>
@@ -186,9 +186,9 @@ function Build() {
 
               <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
                 <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                  <span className="text-[#71717a]">Demo 2</span>
+                  <span className="text-[#71717a]">Create 8004 scanner</span>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Project Title</h3>
+                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 scanner</h3>
                 <p className="text-[#71717a] mb-6 leading-relaxed">
                   Brief description of the demo project and what it demonstrates.
                 </p>
@@ -199,9 +199,9 @@ function Build() {
 
               <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
                 <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                  <span className="text-[#71717a]">Demo 3</span>
+                  <span className="text-[#71717a]">Create 8004 x x402 agent on Coinbase</span>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Project Title</h3>
+                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 x x402 agent on Coinbase</h3>
                 <p className="text-[#71717a] mb-6 leading-relaxed">
                   Brief description of the demo project and what it demonstrates.
                 </p>
