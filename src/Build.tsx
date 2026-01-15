@@ -24,6 +24,30 @@ function Build() {
           <div className="max-w-6xl mx-auto">
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-3xl">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Smart Contracts</h3>
+                <p className="text-[#71717a] mb-6 leading-relaxed">
+                  Access the official ERC-8004 contracts, ABIs, and deployment addresses directly.
+                </p>
+                <div className="space-y-3">
+                  <p className="text-[#52525b]">
+                    <a href="https://github.com/neodaoist/erc8004/tree/main/src" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                      Contracts <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                    <span className="text-[#d4d4d8] mx-2">|</span>
+                    <a href="https://github.com/neodaoist/erc8004/tree/main/out" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                      ABIs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                    <span className="text-[#d4d4d8] mx-2">|</span>
+                    <a href="https://github.com/neodaoist/erc8004#deployments" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                      Deployment addresses <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-3xl">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
                 <p className="text-[#71717a] mb-6 leading-relaxed">
                   If you want to browse agents and reputation from a website, check out the community explorers.
@@ -107,30 +131,6 @@ function Build() {
                   <a href="https://sdk.ag0.xyz/4-subgraph/4-1-intro/" target="_blank" rel="noopener noreferrer" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow text-center inline-flex items-center justify-center gap-1">
                     Documentation <ExternalLink className="w-4 h-4" />
                   </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-16">
-              <div className="max-w-3xl">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Smart Contracts</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Access the official ERC-8004 contracts, ABIs, and deployment addresses directly.
-                </p>
-                <div className="space-y-3">
-                  <p className="text-[#52525b]">
-                    <a href="https://github.com/neodaoist/erc8004/tree/main/src" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      Contracts <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                    <span className="text-[#d4d4d8] mx-2">|</span>
-                    <a href="https://github.com/neodaoist/erc8004/tree/main/out" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      ABIs <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                    <span className="text-[#d4d4d8] mx-2">|</span>
-                    <a href="https://github.com/neodaoist/erc8004#deployments" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      Deployment addresses <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>
