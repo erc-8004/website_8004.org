@@ -190,53 +190,55 @@ function Build() {
               </div>
             </div>
 
-            <div className="mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
-                Demo Projects
-              </h2>
-              <p className="text-lg text-[#71717a]">
-                Go 0-1 with 8004
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-24">
-              <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                  <span className="text-[#71717a]">Create 8004 agent</span>
-                </div>
-                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 agent</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Brief description of the demo project and what it demonstrates.
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
+                  Demo Projects
+                </h3>
+                <p className="text-lg text-[#71717a] mb-8">
+                  Go 0-1 with 8004
                 </p>
-                <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
-                  View Demo
-                </button>
-              </div>
 
-              <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                  <span className="text-[#71717a]">Create 8004 scanner</span>
-                </div>
-                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 scanner</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Brief description of the demo project and what it demonstrates.
-                </p>
-                <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
-                  View Demo
-                </button>
-              </div>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
+                    <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
+                      <span className="text-[#71717a]">Create 8004 agent</span>
+                    </div>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 agent</h4>
+                    <p className="text-[#71717a] mb-6 leading-relaxed">
+                      Brief description of the demo project and what it demonstrates.
+                    </p>
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
+                      View Demo
+                    </button>
+                  </div>
 
-              <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                  <span className="text-[#71717a]">Create 8004 x x402 agent on Coinbase</span>
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
+                    <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
+                      <span className="text-[#71717a]">Create 8004 scanner</span>
+                    </div>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 scanner</h4>
+                    <p className="text-[#71717a] mb-6 leading-relaxed">
+                      Brief description of the demo project and what it demonstrates.
+                    </p>
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
+                      View Demo
+                    </button>
+                  </div>
+
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
+                    <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
+                      <span className="text-[#71717a]">Create 8004 x x402 agent on Coinbase</span>
+                    </div>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 x x402 agent on Coinbase</h4>
+                    <p className="text-[#71717a] mb-6 leading-relaxed">
+                      Brief description of the demo project and what it demonstrates.
+                    </p>
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
+                      View Demo
+                    </button>
+                  </div>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 x x402 agent on Coinbase</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Brief description of the demo project and what it demonstrates.
-                </p>
-                <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
-                  View Demo
-                </button>
               </div>
             </div>
 
