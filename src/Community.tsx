@@ -237,28 +237,6 @@ function Community() {
 
           <CommunityEvents />
 
-          <div className="max-w-3xl mx-auto mb-20 bg-white rounded-2xl p-10 border border-[#e4e4e7] card-shadow">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#18181b] mb-6 text-center">
-              Engage
-            </h2>
-            <p className="text-[#71717a] mb-8 text-lg text-center">
-              Join the conversation on Ethereum Magicians
-            </p>
-            <div className="flex items-center justify-center gap-4 flex-wrap">
-              <a
-                href="https://eips.ethereum.org/EIPS/eip-8004"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
-              >
-                Read Spec
-              </a>
-              <button className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover">
-                8004 Builders
-              </button>
-            </div>
-          </div>
-
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 mt-20 text-[#18181b]">Led by</h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
             Leading organizations collaborating to build open standards
