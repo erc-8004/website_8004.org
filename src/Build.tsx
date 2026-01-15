@@ -23,114 +23,147 @@ function Build() {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
-              <div className="max-w-3xl">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Smart Contracts</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Access the official ERC-8004 contracts, ABIs, and deployment addresses directly.
-                </p>
-                <div className="space-y-3">
-                  <p className="text-[#52525b]">
-                    <a href="https://github.com/neodaoist/erc8004/tree/main/src" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      Contracts <ExternalLink className="w-3.5 h-3.5" />
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Smart Contracts</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Contracts</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Access the official ERC-8004 Solidity source code.
+                    </p>
+                    <a href="https://github.com/neodaoist/erc8004/tree/main/src" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View contracts <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                    <span className="text-[#d4d4d8] mx-2">|</span>
-                    <a href="https://github.com/neodaoist/erc8004/tree/main/out" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      ABIs <ExternalLink className="w-3.5 h-3.5" />
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">ABIs</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Get the compiled ABIs for integration with your applications.
+                    </p>
+                    <a href="https://github.com/neodaoist/erc8004/tree/main/out" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View ABIs <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                    <span className="text-[#d4d4d8] mx-2">|</span>
-                    <a href="https://github.com/neodaoist/erc8004#deployments" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      Deployment addresses <ExternalLink className="w-3.5 h-3.5" />
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Deployments</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Find deployed contract addresses across supported chains.
+                    </p>
+                    <a href="https://github.com/neodaoist/erc8004#deployments" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View addresses <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
-              <div className="max-w-3xl">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  If you want to browse agents and reputation from a website, check out the community explorers.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <a href="https://8004scan.io" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-3.5 py-2 rounded-lg text-xs font-semibold transition-all duration-150 bg-white card-shadow">
-                    8004scan.io
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                  <a href="https://agentscan.info" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-3.5 py-2 rounded-lg text-xs font-semibold transition-all duration-150 bg-white card-shadow">
-                    Agentscan.info
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                  <a href="https://8004agents.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-3.5 py-2 rounded-lg text-xs font-semibold transition-all duration-150 bg-white card-shadow">
-                    8004agents.ai
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                  <a href="https://supermission.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-3.5 py-2 rounded-lg text-xs font-semibold transition-all duration-150 bg-white card-shadow">
-                    Supermission
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">No code solutions</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">8004scan.io</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
+                      Browse agents and reputation data.
+                    </p>
+                    <a href="https://8004scan.io" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Visit <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agentscan.info</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
+                      Explore registered agents on-chain.
+                    </p>
+                    <a href="https://agentscan.info" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Visit <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">8004agents.ai</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
+                      Discover AI agents in the ecosystem.
+                    </p>
+                    <a href="https://8004agents.ai" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Visit <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Supermission</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
+                      Agent mission tracking and insights.
+                    </p>
+                    <a href="https://supermission.ai" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Visit <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
-              <div className="max-w-3xl">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">SDKs</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Several community projects provide SDKs for developers:
-                </p>
-                <div className="space-y-3">
-                  <p className="text-[#52525b]">
-                    <span className="text-[#18181b] font-semibold">ChaosChain</span> offers a TypeScript SDK with Python support in development.{' '}
-                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      View documentation <ExternalLink className="w-3.5 h-3.5" />
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">SDKs</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">ChaosChain</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      TypeScript SDK with Python support in development.
+                    </p>
+                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View docs <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                  </p>
-                  <p className="text-[#52525b]">
-                    <span className="text-[#18181b] font-semibold">Agent0</span> provides both TypeScript and Python SDKs with comprehensive guides and examples.{' '}
-                    <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      Quick start <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                    <span className="text-[#d4d4d8] mx-2">|</span>
-                    <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      Full docs <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </p>
-                  <p className="text-[#52525b]">
-                    <span className="text-[#18181b] font-semibold">Lucid Agents</span> from Daydreams AI offers an alternative SDK approach.{' '}
-                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      TypeScript and Python SDKs with comprehensive guides.
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                        Quick start <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                      <span className="text-[#d4d4d8]">|</span>
+                      <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                        Full docs <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Lucid Agents</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Alternative SDK approach from Daydreams AI.
+                    </p>
+                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                       GitHub <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
-              <div className="max-w-3xl">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Subgraphs</h3>
-                <p className="text-[#71717a] mb-6 leading-relaxed">
-                  Agent0, in collaboration with The Graph Foundation, maintains open-source ERC-8004 subgraphs across multiple chains.
-                </p>
-                <div className="space-y-3 mb-6">
-                  <p className="text-[#52525b]">
-                    View supported chains and endpoints in the GitHub repository.{' '}
-                    <a href="https://github.com/agent0-xyz/erc8004-subgraphs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                      GitHub <ExternalLink className="w-3.5 h-3.5" />
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Subgraphs</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">GitHub Repository</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Open-source ERC-8004 subgraphs maintained by Agent0 and The Graph Foundation across multiple chains.
+                    </p>
+                    <a href="https://github.com/agent0-xyz/erc8004-subgraphs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View on GitHub <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                  </p>
-                  <p className="text-[#52525b]">
-                    Want to list your subgraph? Open a PR or contact{' '}
-                    <a href="mailto:team@ag0.xyz" className="text-[#4C2A85] hover:text-[#412471] font-medium">team@ag0.xyz</a>.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="https://thegraph.com/explorer" target="_blank" rel="noopener noreferrer" className="bg-[#4C2A85] text-white hover:bg-[#412471] px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover text-center">
-                    Go to subgraphs
-                  </a>
-                  <a href="https://sdk.ag0.xyz/4-subgraph/4-1-intro/" target="_blank" rel="noopener noreferrer" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow text-center inline-flex items-center justify-center gap-1">
-                    Documentation <ExternalLink className="w-4 h-4" />
-                  </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Documentation</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Learn how to query subgraphs and integrate them into your applications.
+                    </p>
+                    <a href="https://sdk.ag0.xyz/4-subgraph/4-1-intro/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Read docs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
