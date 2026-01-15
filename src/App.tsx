@@ -50,6 +50,15 @@ function App() {
             >
               FAQ
             </button>
+            <a
+              href="https://t.me/ERC8004"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-[#4C2A85] text-white hover:bg-[#412471] px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-150"
+            >
+              Join Community
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </nav>
       </header>
