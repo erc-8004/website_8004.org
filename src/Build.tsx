@@ -27,7 +27,7 @@ function Build() {
               <div className="max-w-full">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
                 <p className="text-lg text-[#71717a] mb-8">
-                  If you want to browse agents and reputation from a website, check out the community explorers.
+                  If you want to browse agents and reputation from a website, check out the community explorers
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
