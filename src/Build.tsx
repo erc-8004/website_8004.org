@@ -55,34 +55,29 @@ function Build() {
                 <p className="text-[#71717a] mb-6 leading-relaxed">
                   Several community projects provide SDKs for developers:
                 </p>
-                <div className="space-y-4">
-                  <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
-                    <span className="text-[#18181b] font-semibold shrink-0">ChaosChain</span>
-                    <span className="text-[#71717a]">offers a TypeScript SDK with Python support in development.</span>
-                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1 shrink-0">
+                <div className="space-y-3">
+                  <p className="text-[#52525b]">
+                    <span className="text-[#18181b] font-semibold">ChaosChain</span> offers a TypeScript SDK with Python support in development.{' '}
+                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
                       View documentation <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
-                    <span className="text-[#18181b] font-semibold shrink-0">Agent0</span>
-                    <span className="text-[#71717a]">provides both TypeScript and Python SDKs with comprehensive guides and examples.</span>
-                    <div className="flex items-center gap-3 shrink-0">
-                      <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                        Quick start <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                      <span className="text-[#d4d4d8]">|</span>
-                      <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
-                        Full docs <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
-                    <span className="text-[#18181b] font-semibold shrink-0">Lucid Agents</span>
-                    <span className="text-[#71717a]">from Daydreams AI offers an alternative SDK approach.</span>
-                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1 shrink-0">
+                  </p>
+                  <p className="text-[#52525b]">
+                    <span className="text-[#18181b] font-semibold">Agent0</span> provides both TypeScript and Python SDKs with comprehensive guides and examples.{' '}
+                    <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                      Quick start <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                    <span className="text-[#d4d4d8] mx-2">|</span>
+                    <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                      Full docs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </p>
+                  <p className="text-[#52525b]">
+                    <span className="text-[#18181b] font-semibold">Lucid Agents</span> from Daydreams AI offers an alternative SDK approach.{' '}
+                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
                       GitHub <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
