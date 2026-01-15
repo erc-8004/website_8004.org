@@ -157,7 +157,10 @@ function Build() {
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Deployment & Best Practices</h3>
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Deployment & Best Practices</h3>
+                <p className="text-lg text-[#71717a] mb-6">
+                  Deploy 8004 registries to your chain and understand best practice for building with 8004
+                </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Deploy on your chain</h4>
