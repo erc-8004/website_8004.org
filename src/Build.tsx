@@ -22,6 +22,33 @@ function Build() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-3xl">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
+                <p className="text-[#71717a] mb-6 leading-relaxed">
+                  If you want to browse agents and reputation from a website, check out the community explorers.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a href="https://8004scan.io" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow">
+                    8004scan.io
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                  <a href="https://agentscan.info" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow">
+                    Agentscan.info
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                  <a href="https://8004agents.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow">
+                    8004agents.ai
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                  <a href="https://supermission.ai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow">
+                    Supermission
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-16">
               <div className="max-w-3xl">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Quickstart</h3>
