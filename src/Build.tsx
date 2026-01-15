@@ -80,7 +80,7 @@ function Build() {
                       <p className="text-[#71717a] mb-5 leading-relaxed">
                         Open-source ERC-8004 subgraphs maintained by Agent0 and The Graph Foundation across multiple chains.
                       </p>
-                      <a href="https://github.com/agent0-xyz/erc8004-subgraphs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      <a href="https://github.com/agent0lab/subgraph" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                         View on GitHub <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
