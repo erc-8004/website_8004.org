@@ -82,6 +82,35 @@ function Build() {
               </div>
             </div>
 
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-3xl">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Subgraphs</h3>
+                <p className="text-[#71717a] mb-6 leading-relaxed">
+                  Agent0, in collaboration with The Graph Foundation, maintains open-source ERC-8004 subgraphs across multiple chains.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <p className="text-[#52525b]">
+                    View supported chains and endpoints in the GitHub repository.{' '}
+                    <a href="https://github.com/agent0-xyz/erc8004-subgraphs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-medium inline-flex items-center gap-1">
+                      GitHub <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </p>
+                  <p className="text-[#52525b]">
+                    Want to list your subgraph? Open a PR or contact{' '}
+                    <a href="mailto:team@ag0.xyz" className="text-[#4C2A85] hover:text-[#412471] font-medium">team@ag0.xyz</a>.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a href="https://thegraph.com/explorer" target="_blank" rel="noopener noreferrer" className="bg-[#4C2A85] text-white hover:bg-[#412471] px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover text-center">
+                    Go to subgraphs
+                  </a>
+                  <a href="https://sdk.ag0.xyz/4-subgraph/4-1-intro/" target="_blank" rel="noopener noreferrer" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-150 bg-white card-shadow text-center inline-flex items-center justify-center gap-1">
+                    Documentation <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-16">
               <div className="max-w-3xl">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">Quickstart</h3>
