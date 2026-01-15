@@ -106,10 +106,7 @@ function Build() {
                   Demo Projects
                 </h3>
                 <p className="text-lg text-[#71717a] mb-2">
-                  Go 0-1 with 8004
-                </p>
-                <p className="text-lg text-[#71717a] mb-8">
-                  If you want to browse agents and reputation from a website, check out the community explorers.
+                  Leran how to build with 8004.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6">
