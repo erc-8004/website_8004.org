@@ -161,7 +161,7 @@ function Build() {
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       Want to bring ERC-8004 to your blockchain? Contact us to coordinate singleton deployment.
                     </p>
-                    <a href="mailto:team@8004.org" className="bg-[#4C2A85] text-white hover:bg-[#412471] px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover inline-block">
+                    <a href="mailto:team@8004.org" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] bg-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 inline-block">
                       Email team@8004.org
                     </a>
                   </div>
