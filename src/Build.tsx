@@ -67,33 +67,35 @@ function Build() {
               </div>
             </div>
 
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
-              <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Subgraphs</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">GitHub Repository</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      Open-source ERC-8004 subgraphs maintained by Agent0 and The Graph Foundation across multiple chains.
-                    </p>
-                    <a href="https://github.com/agent0-xyz/erc8004-subgraphs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      View on GitHub <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Documentation</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      Learn how to query subgraphs and integrate them into your applications.
-                    </p>
-                    <a href="https://sdk.ag0.xyz/4-subgraph/4-1-intro/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      Read docs <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
+                <div className="max-w-full">
+                  <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Subgraphs</h3>
+                  <div className="grid gap-6">
+                    <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                      <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">GitHub Repository</h4>
+                      <p className="text-[#71717a] mb-5 leading-relaxed">
+                        Open-source ERC-8004 subgraphs maintained by Agent0 and The Graph Foundation across multiple chains.
+                      </p>
+                      <a href="https://github.com/agent0-xyz/erc8004-subgraphs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                        View on GitHub <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                    <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                      <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Documentation</h4>
+                      <p className="text-[#71717a] mb-5 leading-relaxed">
+                        Learn how to query subgraphs and integrate them into your applications.
+                      </p>
+                      <a href="https://sdk.ag0.xyz/4-subgraph/4-1-intro/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                        Read docs <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <SDKs />
+              <SDKs />
+            </div>
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full">
