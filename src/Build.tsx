@@ -180,6 +180,15 @@ function Build() {
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">The ERC-8004 Specification</h3>
+                <p className="text-lg text-[#71717a] mb-8">
+                  See the official ERC-8004 reference materials
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-full">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#18181b]">Smart Contracts</h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
