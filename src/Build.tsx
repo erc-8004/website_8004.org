@@ -106,7 +106,7 @@ function Build() {
                   Demo Projects
                 </h3>
                 <p className="text-lg text-[#71717a] mb-2">
-                  Leran how to build with 8004.
+                  Leran how to build with 8004
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6">
