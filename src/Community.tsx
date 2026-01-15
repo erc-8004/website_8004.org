@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import CommunityEvents from './CommunityEvents';
 
 function Community() {
@@ -31,6 +32,17 @@ function Community() {
                   builder groups interested in implementing specs
                 </p>
               </div>
+            </div>
+            <div className="mt-12 text-center">
+              <a
+                href="https://t.me/ERC8004"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150"
+              >
+                Join Community
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
