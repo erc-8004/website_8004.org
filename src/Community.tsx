@@ -2,6 +2,13 @@ import { ArrowRight } from 'lucide-react';
 import CommunityEvents from './CommunityEvents';
 
 function Community() {
+  const scrollToEvents = () => {
+    const eventsSection = document.getElementById('community-events');
+    if (eventsSection) {
+      eventsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
       <section className="relative py-20 bg-white overflow-hidden">
@@ -33,16 +40,22 @@ function Community() {
                 </p>
               </div>
             </div>
-            <div className="mt-12 text-center">
+            <div className="mt-12 flex items-center justify-center gap-4 flex-wrap">
               <a
                 href="https://t.me/ERC8004"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150"
+                className="inline-flex items-center gap-2 bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
               >
                 Join Community
                 <ArrowRight className="w-5 h-5" />
               </a>
+              <button
+                onClick={scrollToEvents}
+                className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+              >
+                See Events
+              </button>
             </div>
           </div>
         </div>
@@ -228,7 +241,9 @@ function Community() {
             </p>
           </div>
 
-          <CommunityEvents />
+          <div id="community-events">
+            <CommunityEvents />
+          </div>
 
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 mt-20 text-[#18181b]">Led by</h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
