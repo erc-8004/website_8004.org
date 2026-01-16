@@ -241,10 +241,6 @@ function Community() {
             </p>
           </div>
 
-          <div id="community-events">
-            <CommunityEvents />
-          </div>
-
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 mt-20 text-[#18181b]">Led by</h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
             Leading organizations collaborating to build open standards
@@ -263,6 +259,10 @@ function Community() {
                 <span className="text-sm font-medium text-[#18181b]">{org.name}</span>
               </div>
             ))}
+          </div>
+
+          <div id="community-events" className="mt-20">
+            <CommunityEvents />
           </div>
         </div>
       </section>
