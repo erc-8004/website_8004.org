@@ -26,7 +26,7 @@ function Build() {
           <div className="max-w-6xl mx-auto">
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No Code Solutions</h3>
                 <p className="text-lg text-[#71717a] mb-8">
                   If you want to browse agents and reputation from a website, check out the community explorers
                 </p>
