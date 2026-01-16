@@ -227,7 +227,7 @@ function Build() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#fafafa]">
+      <section className="hidden py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="bg-white rounded-2xl p-8 border border-[#e4e4e7] card-shadow max-w-3xl">
