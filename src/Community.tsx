@@ -36,7 +36,7 @@ function Community() {
               <div className="text-center">
                 <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">200+</div>
                 <p className="text-[#71717a] leading-relaxed">
-                  builders
+                  Builders
                 </p>
               </div>
             </div>
