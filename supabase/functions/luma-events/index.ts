@@ -1,33 +1,11 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { createClient } from "npm:@supabase/supabase-js@2.57.4";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Client-Info, Apikey",
 };
-
-interface LumaEvent {
-  api_id: string;
-  event: {
-    api_id: string;
-    name: string;
-    start_at: string;
-    end_at: string;
-    cover_url: string | null;
-    url: string;
-    geo_address_info?: {
-      city?: string;
-      country?: string;
-    } | null;
-    timezone: string;
-  };
-}
-
-interface LumaResponse {
-  entries: LumaEvent[];
-  has_more: boolean;
-  next_cursor?: string;
-}
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
@@ -38,56 +16,26 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const LUMA_CALENDAR_ID = Deno.env.get("LUMA_CALENDAR_ID");
-    const LUMA_API_KEY = Deno.env.get("LUMA_API_KEY");
+    const supabaseUrl = Deno.env.get("SUPABASE_URL");
+    const supabaseKey = Deno.env.get("SUPABASE_ANON_KEY");
 
-    if (!LUMA_CALENDAR_ID) {
-      return new Response(
-        JSON.stringify({
-          events: [],
-          message: "Luma calendar not configured",
-        }),
-        {
-          headers: {
-            ...corsHeaders,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error("Supabase credentials not configured");
     }
 
-    const headers: Record<string, string> = {
-      "Content-Type": "application/json",
-    };
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
-    if (LUMA_API_KEY) {
-      headers["x-luma-api-key"] = LUMA_API_KEY;
+    const { data: events, error } = await supabase
+      .from("events")
+      .select("*")
+      .order("date", { ascending: true });
+
+    if (error) {
+      throw error;
     }
-
-    const response = await fetch(
-      `https://api.lu.ma/public/v1/calendar/get-items?calendar_api_id=${LUMA_CALENDAR_ID}&period=future`,
-      { headers }
-    );
-
-    if (!response.ok) {
-      throw new Error(`Luma API error: ${response.status}`);
-    }
-
-    const data: LumaResponse = await response.json();
-
-    const events = data.entries.map((entry) => ({
-      id: entry.event.api_id,
-      name: entry.event.name,
-      start_at: entry.event.start_at,
-      end_at: entry.event.end_at,
-      cover_url: entry.event.cover_url,
-      url: entry.event.url,
-      geo_address_info: entry.event.geo_address_info,
-      timezone: entry.event.timezone,
-    }));
 
     return new Response(
-      JSON.stringify({ events }),
+      JSON.stringify({ events: events || [] }),
       {
         headers: {
           ...corsHeaders,
@@ -96,7 +44,7 @@ Deno.serve(async (req: Request) => {
       }
     );
   } catch (error) {
-    console.error("Error fetching Luma events:", error);
+    console.error("Error fetching events:", error);
     return new Response(
       JSON.stringify({
         events: [],
