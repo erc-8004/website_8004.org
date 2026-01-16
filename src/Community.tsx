@@ -61,7 +61,7 @@ function Community() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#fafafa]">
+      <section className="hidden py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
