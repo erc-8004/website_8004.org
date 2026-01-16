@@ -1,22 +1,24 @@
 import { useState, useEffect } from 'react';
-import { Calendar, MapPin, ExternalLink, Users } from 'lucide-react';
+import { Calendar, ExternalLink, Users } from 'lucide-react';
+import { createClient } from '@supabase/supabase-js';
 
-interface LumaEvent {
+interface Event {
   id: string;
-  name: string;
-  start_at: string;
-  end_at: string;
-  cover_url: string | null;
+  title: string;
+  img_url: string | null;
+  date: string;
   url: string;
-  geo_address_info?: {
-    city?: string;
-    country?: string;
-  } | null;
-  timezone: string;
+  created_at: string;
+  updated_at: string;
 }
 
+const supabase = createClient(
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY
+);
+
 function CommunityEvents() {
-  const [events, setEvents] = useState<LumaEvent[]>([]);
+  const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -27,16 +29,16 @@ function CommunityEvents() {
   const fetchEvents = async () => {
     try {
       setLoading(true);
-      const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/luma-events`
-      );
+      const { data, error: fetchError } = await supabase
+        .from('events')
+        .select('*')
+        .order('date', { ascending: true });
 
-      if (!response.ok) {
-        throw new Error('Failed to fetch events');
+      if (fetchError) {
+        throw fetchError;
       }
 
-      const data = await response.json();
-      setEvents(data.events || []);
+      setEvents(data || []);
     } catch (err) {
       setError('Unable to load events');
       console.error('Error fetching events:', err);
@@ -46,28 +48,18 @@ function CommunityEvents() {
   };
 
   const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      weekday: 'short',
-      month: 'short',
-      day: 'numeric',
-    });
-  };
-
-  const formatTime = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleTimeString('en-US', {
-      hour: 'numeric',
-      minute: '2-digit',
-      hour12: true,
-    });
-  };
-
-  const getLocation = (event: LumaEvent) => {
-    if (event.geo_address_info?.city) {
-      return `${event.geo_address_info.city}${event.geo_address_info.country ? `, ${event.geo_address_info.country}` : ''}`;
+    const parts = dateString.split('/');
+    if (parts.length === 3) {
+      const [day, month, year] = parts;
+      const fullYear = `20${year}`;
+      const date = new Date(`${fullYear}-${month}-${day}`);
+      return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      });
     }
-    return 'Online';
+    return dateString;
   };
 
   if (loading) {
@@ -134,10 +126,10 @@ function CommunityEvents() {
             className="group bg-white rounded-2xl border border-[#e4e4e7] overflow-hidden card-shadow transition-all duration-200 hover:border-[#4C2A85] hover:card-shadow-hover"
           >
             <div className="h-40 bg-[#f4f4f5] relative overflow-hidden">
-              {event.cover_url ? (
+              {event.img_url ? (
                 <img
-                  src={event.cover_url}
-                  alt={event.name}
+                  src={event.img_url}
+                  alt={event.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               ) : (
@@ -146,20 +138,16 @@ function CommunityEvents() {
                 </div>
               )}
               <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 text-sm font-medium text-[#4C2A85]">
-                {formatDate(event.start_at)}
+                {formatDate(event.date)}
               </div>
             </div>
             <div className="p-5">
+              <h3 className="font-semibold text-[#18181b] mb-3 line-clamp-2 group-hover:text-[#4C2A85] transition-colors">
+                {event.title}
+              </h3>
               <div className="flex items-center gap-2 text-sm text-[#71717a] mb-2">
                 <Calendar className="w-4 h-4" />
-                <span>{formatTime(event.start_at)}</span>
-              </div>
-              <h3 className="font-semibold text-[#18181b] mb-2 line-clamp-2 group-hover:text-[#4C2A85] transition-colors">
-                {event.name}
-              </h3>
-              <div className="flex items-center gap-2 text-sm text-[#71717a]">
-                <MapPin className="w-4 h-4 flex-shrink-0" />
-                <span className="truncate">{getLocation(event)}</span>
+                <span>{formatDate(event.date)}</span>
               </div>
               <div className="mt-4 flex items-center gap-1 text-sm font-medium text-[#4C2A85] opacity-0 group-hover:opacity-100 transition-opacity">
                 <span>View Event</span>
