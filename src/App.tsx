@@ -102,7 +102,7 @@ function App() {
       <section id="about" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center text-[#18181b]">
-            Agents That Work for People, Owned by the People
+            Agents That Work for People, Owned by People
           </h2>
           <div className="max-w-6xl mx-auto space-y-16">
             <div className="text-center mb-8">
