@@ -22,21 +22,21 @@ function Community() {
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">5,500+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">700+</div>
                 <p className="text-[#71717a] leading-relaxed">
-                  developers on X in the first month
+                  Registered agents
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">#2</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">300+</div>
                 <p className="text-[#71717a] leading-relaxed">
-                  most popular discussion of the year on Ethereum Magicians
+                  Exchanged feedback
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">80+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">200+</div>
                 <p className="text-[#71717a] leading-relaxed">
-                  builder groups interested in implementing specs
+                  builders
                 </p>
               </div>
             </div>
