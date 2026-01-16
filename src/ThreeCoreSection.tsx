@@ -49,9 +49,9 @@ function ThreeCoreSection() {
     {
       id: 3,
       title: 'Payments',
-      subtitle: 'Programmable settlement with proof of work',
+      subtitle: 'Programmable settlement tied to completed tasks',
       icon: Receipt,
-      detailTitle: 'Payments create proof of work',
+      detailTitle: 'Programmable settlement tied to completed tasks',
       detailText: 'Every transaction generates a verifiable receipt. This links payment to performance and establishes accountability.',
       detailIcon: FileCheck,
     },
