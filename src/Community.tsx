@@ -233,9 +233,14 @@ function Community() {
           </div>
 
           <div className="text-center mb-20">
-            <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-3 bg-white card-shadow hover:card-shadow-hover">
+            <a
+              href="https://form.fillout.com/t/e8VGKbnf7Wus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-150 mb-3 bg-white card-shadow hover:card-shadow-hover"
+            >
               Add your project
-            </button>
+            </a>
             <p className="text-[#71717a]">
               Include your agent in our directory
             </p>
