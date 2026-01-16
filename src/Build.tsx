@@ -151,8 +151,8 @@ function Build() {
 
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                    <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                      <span className="text-[#71717a]">Create 8004 agent</span>
+                    <div className="aspect-square bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                      <img src="/image.png" alt="Create 8004 agent" className="w-full h-full object-cover" />
                     </div>
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 agent</h4>
                     <p className="text-[#71717a] mb-6 leading-relaxed">
@@ -164,8 +164,8 @@ function Build() {
                   </div>
 
                   <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                    <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                      <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 scanner" className="w-full h-full object-contain" />
+                    <div className="aspect-square bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                      <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 scanner" className="w-full h-full object-cover" />
                     </div>
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 scanner</h4>
                     <p className="text-[#71717a] mb-6 leading-relaxed">
@@ -177,8 +177,8 @@ function Build() {
                   </div>
 
                   <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                    <div className="aspect-video bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7]">
-                      <span className="text-[#71717a]">Create 8004 x x402 agent on Coinbase</span>
+                    <div className="aspect-square bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                      <img src="/image.png" alt="Create 8004 x x402 agent on Coinbase" className="w-full h-full object-cover" />
                     </div>
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create 8004 x x402 agent on Coinbase</h4>
                     <p className="text-[#71717a] mb-6 leading-relaxed">
