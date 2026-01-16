@@ -71,6 +71,42 @@ function Build() {
               </div>
             </div>
 
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-full text-center">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-12 text-[#18181b]">
+                  Supported Chains
+                </h3>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-8 max-w-5xl mx-auto">
+                  {[
+                    'ETH Sepolia',
+                    'Base Sepolia',
+                    'Linea Sepolia',
+                    'Polygon Amoy',
+                    'Hedera Testnet',
+                    'HyperEVM Testnet'
+                  ].map((chain, index) => (
+                    <div key={index} className="flex flex-col items-center gap-3">
+                      <div className="w-20 h-20 rounded-full bg-[#f3f0ff] border-2 border-[#e4e4e7] flex items-center justify-center hover:border-[#4C2A85] transition-colors duration-200">
+                        <div className="w-10 h-10 rounded-full bg-[#4C2A85]"></div>
+                      </div>
+                      <span className="text-sm font-medium text-[#3f3f46] text-center">{chain}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href="https://github.com/erc-8004/erc-8004-contracts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1"
+                >
+                  see deployed 8004 contracts
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
                 <div className="max-w-full">
@@ -187,44 +223,6 @@ function Build() {
 
             <SDKs />
 
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-[#fafafa]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto text-center mb-20">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 text-[#18181b]">
-              Supported Chains
-            </h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-8 max-w-5xl mx-auto">
-              {[
-                'ETH Sepolia',
-                'Base Sepolia',
-                'Linea Sepolia',
-                'Polygon Amoy',
-                'Hedera Testnet',
-                'HyperEVM Testnet'
-              ].map((chain, index) => (
-                <div key={index} className="flex flex-col items-center gap-3">
-                  <div className="w-20 h-20 rounded-full bg-[#f3f0ff] border-2 border-[#e4e4e7] flex items-center justify-center hover:border-[#4C2A85] transition-colors duration-200">
-                    <div className="w-10 h-10 rounded-full bg-[#4C2A85]"></div>
-                  </div>
-                  <span className="text-sm font-medium text-[#3f3f46] text-center">{chain}</span>
-                </div>
-              ))}
-            </div>
-
-            <a
-              href="https://github.com/erc-8004/erc-8004-contracts"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1"
-            >
-              see deployed 8004 contracts
-              <ExternalLink className="w-4 h-4" />
-            </a>
           </div>
         </div>
       </section>
