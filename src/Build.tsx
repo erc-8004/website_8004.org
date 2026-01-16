@@ -1,8 +1,13 @@
 import { ExternalLink } from 'lucide-react';
 import SDKs from './SDKs';
 import SmartContracts from './SmartContracts';
+import Footer from './Footer';
 
-function Build() {
+interface BuildProps {
+  onNavigate?: (page: string) => void;
+}
+
+function Build({ onNavigate }: BuildProps = {}) {
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
       <section className="relative py-20 bg-white overflow-hidden">
@@ -256,6 +261,8 @@ function Build() {
           </div>
         </div>
       </section>
+
+      {onNavigate && <Footer onNavigate={onNavigate} />}
     </div>
   );
 }

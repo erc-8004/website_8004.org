@@ -1,7 +1,12 @@
 import { ArrowRight } from 'lucide-react';
 import CommunityEvents from './CommunityEvents';
+import Footer from './Footer';
 
-function Community() {
+interface CommunityProps {
+  onNavigate?: (page: string) => void;
+}
+
+function Community({ onNavigate }: CommunityProps = {}) {
   const scrollToEvents = () => {
     const eventsSection = document.getElementById('community-events');
     if (eventsSection) {
@@ -271,6 +276,8 @@ function Community() {
           </div>
         </div>
       </section>
+
+      {onNavigate && <Footer onNavigate={onNavigate} />}
     </div>
   );
 }

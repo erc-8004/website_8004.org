@@ -1,7 +1,12 @@
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import Footer from './Footer';
 
-function FAQ() {
+interface FAQProps {
+  onNavigate?: (page: string) => void;
+}
+
+function FAQ({ onNavigate }: FAQProps = {}) {
   const [openIndex, setOpenIndex] = useState<string | null>(null);
 
   const faqSections = [
@@ -248,6 +253,8 @@ function FAQ() {
           </a>
         </div>
       </section>
+
+      {onNavigate && <Footer onNavigate={onNavigate} />}
     </div>
   );
 }
