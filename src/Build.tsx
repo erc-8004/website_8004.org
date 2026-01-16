@@ -107,7 +107,7 @@ function Build() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="hidden grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
                 <div className="max-w-full">
                   <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Subgraphs</h3>
