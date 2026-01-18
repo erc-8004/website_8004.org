@@ -136,9 +136,9 @@ function CommunityEvents() {
               href={event.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-2xl border border-[#e4e4e7] overflow-hidden card-shadow transition-all duration-200 hover:border-[#4C2A85] hover:card-shadow-hover flex-shrink-0 w-[300px]"
+              className="group bg-white rounded-2xl border border-[#e4e4e7] overflow-hidden card-shadow transition-all duration-200 hover:border-[#4C2A85] hover:card-shadow-hover flex-shrink-0 w-[300px] flex flex-col"
             >
-              <div className="h-40 bg-[#f4f4f5] relative overflow-hidden">
+              <div className="h-40 bg-[#f4f4f5] relative overflow-hidden flex-shrink-0">
                 {event.img_url ? (
                   <img
                     src={event.img_url}
@@ -158,15 +158,15 @@ function CommunityEvents() {
                   {isUpcoming(event.date) ? 'Upcoming' : 'Ended'}
                 </div>
               </div>
-              <div className="p-5">
+              <div className="p-5 flex flex-col flex-1">
                 <h3 className="font-semibold text-[#18181b] mb-3 line-clamp-2 group-hover:text-[#4C2A85] transition-colors">
                   {event.title}
                 </h3>
-                <div className="flex items-center gap-2 text-sm text-[#71717a] mb-2">
+                <div className="flex items-center gap-2 text-sm text-[#71717a]">
                   <Calendar className="w-4 h-4" />
                   <span>{formatDate(event.date)}</span>
                 </div>
-                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-[#4C2A85] opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="mt-auto pt-4 flex items-center gap-1 text-sm font-medium text-[#4C2A85] opacity-0 group-hover:opacity-100 transition-opacity">
                   <span>View Event</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </div>

@@ -84,7 +84,7 @@ function Community() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">
-            Builder Perspectives
+            Builder perspectives
           </h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
             Voices from the teams building with open agent standards
@@ -129,7 +129,7 @@ function Community() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                  <img src="/chaoschain.jpg" alt="Chaoschain" className="w-full h-full object-cover" />
+                  <img src="/logos/ChaosChain.jpg" alt="Chaoschain" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="font-semibold text-[#18181b]">Sumeet</p>
@@ -149,86 +149,89 @@ function Community() {
             With global builders and contributors
           </h3>
 
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 max-w-4xl mx-auto mb-8">
+          <div className="grid grid-cols-4 md:grid-cols-7 gap-x-6 gap-y-8 max-w-3xl mx-auto mb-12">
             {[
-              { name: 'Pakt.world', img: '/pakt.world.jpg' },
-              { name: 'ZyfAI', img: '/zyfai.jpg' },
-              { name: 'Alias Labs', img: '/alias_labs.jpg' },
-              { name: 'Zaara AI', img: '/zaara_ai.jpg' },
-              { name: 'Inomy', img: '/inomy.png' },
-              { name: 'ENS', img: '/ens.jpg' },
-              { name: 'Questflow', img: '/questflow.jpg' },
-              { name: '42', img: '/42.jpg' },
-              { name: 'Pinata Cloud', img: '/pinata_cloud.jpg' },
-              { name: 'Oasis', img: '/oasis.jpg' },
-              { name: 'Flashbots', img: '/flashbots.jpg' },
-              { name: 'Phala', img: '/phala.png' },
+              { name: '0xGasless', img: '/logos/0xGasless.jpg' },
+              { name: 'AEON', img: '/logos/AEON.jpg' },
+              { name: 'AiMo Network', img: '/logos/AiMo Network.jpg' },
+              { name: 'Alias Labs', img: '/logos/Alias Labs.jpg' },
+              { name: 'Ampersend', img: '/logos/Ampersend.jpg' },
+              { name: 'AstraSync', img: '/logos/AstraSync.jpg' },
+              { name: 'Base', img: '/logos/base.jpg' },
+              { name: 'BlocRun', img: '/logos/BlocRun.jpg' },
+              { name: 'Bond Credit', img: '/logos/bond.credit.jpg' },
+              { name: 'Bonfires', img: '/logos/Bonfires.jpg' },
+              { name: 'Cambrian', img: '/logos/CAmbrian.jpg' },
+              { name: 'ChaosChain', img: '/logos/ChaosChain.jpg' },
+              { name: 'Cod3x', img: '/logos/Cod3x.png' },
+              { name: 'Collab.land', img: '/logos/Collab.land.jpg' },
+              { name: 'Consensys', img: '/logos/Consensys.jpg' },
+              { name: 'DappRadar', img: '/logos/DappRadar.png' },
+              { name: 'DayDreams Agents', img: '/logos/DayDreamsAgents.png' },
+              { name: 'EigenLayer', img: '/logos/EigenLayer.jpg' },
+              { name: 'Ekai Labs', img: '/logos/Ekai Labs.jpg' },
+              { name: 'ElizaOS', img: '/logos/ElizaOS.png' },
+              { name: 'EmberAI', img: '/logos/EmberAI.jpg' },
+              { name: 'ENS', img: '/logos/ENS.jpg' },
+              { name: 'Ethos', img: '/logos/Ethos.jpg' },
+              { name: 'Filecoin', img: '/logos/filecoin.jpg' },
+              { name: 'Flashbots', img: '/logos/Flashbots.jpg' },
+              { name: 'Giza Tech', img: '/logos/Giza Tech.jpg' },
+              { name: 'HashgraphDAO', img: '/logos/hashgraphDAO.jpg' },
+              { name: 'HelloMother', img: '/logos/HelloMother.jpg' },
+              { name: 'Index Network', img: '/logos/Index Network.png' },
+              { name: 'Inomy', img: '/logos/Inomy.png' },
+              { name: 'iSek', img: '/logos/iSek.jpg' },
+              { name: 'JoAI', img: '/logos/JoAI.jpg' },
+              { name: 'Karum', img: '/logos/Karum.jpg' },
+              { name: 'Khorus', img: '/logos/Khorus.jpg' },
+              { name: 'Kudo', img: '/logos/Kudo.jpg' },
+              { name: 'LineaBuild', img: '/logos/LineaBuild.png' },
+              { name: 'Lyneth', img: '/logos/Lyneth.jpg' },
+              { name: 'Mcpay Tech', img: '/logos/Mcpay Tech.jpg' },
+              { name: 'Metamask', img: '/logos/Metamask.jpg' },
+              { name: 'MinaraAI', img: '/logos/MinaraAI.jpg' },
+              { name: 'Near Protocol', img: '/logos/Near Protocol.jpg' },
+              { name: 'Nevermined', img: '/logos/Nevermined.jpg' },
+              { name: 'Oasis', img: '/logos/Oasis.jpg' },
+              { name: 'Offchain Labs', img: '/logos/OffchainLabs.png' },
+              { name: 'Olas', img: '/logos/Olas.jpg' },
+              { name: 'OpenServ', img: '/logos/OpenServ.jpg' },
+              { name: 'OttoWallet', img: '/logos/OttoWallet.jpg' },
+              { name: 'Pakt.World', img: '/logos/Pakt.World.jpg' },
+              { name: 'Phala', img: '/logos/Phala.png' },
+              { name: 'Pinata Cloud', img: '/logos/Pinata Cloud.jpg' },
+              { name: 'PoapStudio', img: '/logos/PoapStudio.jpg' },
+              { name: 'Polygon', img: '/logos/polygon.jpg' },
+              { name: 'Praxis', img: '/logos/Praxis.jpg' },
+              { name: 'Questflow', img: '/logos/Questflow.jpg' },
+              { name: 'Rena Labs', img: '/logos/Rena Labs.jpg' },
+              { name: 'Scroll', img: '/logos/Scroll.jpg' },
+              { name: 'Semantic', img: '/logos/semantic.png' },
+              { name: 'Semiotic', img: '/logos/Semiotic.jpg' },
+              { name: 'Silence Labs', img: '/logos/Silence Labs.jpg' },
+              { name: 'SilverBackDeFi', img: '/logos/SilverBackDefi.jpg' },
+              { name: 'Supermission', img: '/logos/Supermission.jpg' },
+              { name: 'Terminal3', img: '/logos/Terminal3.jpg' },
+              { name: 'Theoriq', img: '/logos/Theoriq (Alpha Protocol).jpg' },
+              { name: 'ThirdWeb', img: '/logos/Thirdweb.jpg' },
+              { name: 'Towns Protocol', img: '/logos/Towns Protocol.png' },
+              { name: 'Trusta Network', img: '/logos/Trusta Network.jpg' },
+              { name: 'Turf Network', img: '/logos/turf-network.jpeg' },
+              { name: 'UltravioletaDAO', img: '/logos/UltravoiletaDAO .png' },
+              { name: 'Unibase', img: '/logos/Unibase.jpg' },
+              { name: 'Virtuals', img: '/logos/Virtuals.jpg' },
+              { name: 'Warden Protocol', img: '/logos/Warden Protocol.jpg' },
+              { name: 'Worldcoin', img: '/logos/Worldcoin.jpg' },
+              { name: 'ZyfAI', img: '/logos/ZyfAI.jpg' },
             ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200">
-                <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 max-w-4xl mx-auto mb-8">
-            {[
-              { name: 'EmerBai', img: '/emerbai.jpg' },
-              { name: 'Eternal AI', img: '/eternal_ai_.jpg' },
-              { name: 'Thirdweb', img: '/thirdweb.jpg' },
-              { name: 'Khoros', img: '/khoros.jpg' },
-              { name: 'McPay Tech', img: '/mcpay_tech.jpg' },
-              { name: 'Nevermined', img: '/nevermined.jpg' },
-              { name: 'Giza Tech', img: '/giza_tech.jpg' },
-              { name: 'Cod3x', img: '/cod3x.png' },
-              { name: 'OpenServ', img: '/openserv.jpg' },
-              { name: 'Praxis', img: '/praxis copy.jpg' },
-              { name: 'Semantic', img: '/semantic.png' },
-              { name: 'Rena Labs', img: '/rena_labs.jpg' },
-            ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200">
-                <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 max-w-4xl mx-auto mb-8">
-            {[
-              { name: '2TA', img: '/2ta.png' },
-              { name: 'Olas', img: '/olas.jpg' },
-              { name: 'Collab.Land', img: '/collab.land.jpg' },
-              { name: 'Eliza', img: '/eliza_profile_black_1000px.png' },
-              { name: 'Cambrian', img: '/cambrian.jpg' },
-              { name: 'Ultraviolet DAO', img: '/ultravoiletadao_.png' },
-              { name: '0xGasless', img: '/0xgasless.jpg' },
-              { name: 'Aeon', img: '/aeon.jpg' },
-              { name: 'Bond Credit', img: '/bond.credit.jpg' },
-              { name: 'Bonfires', img: '/bonfires.jpg' },
-              { name: 'Filecoin', img: '/filecoin.jpg' },
-              { name: 'EKAI Labs', img: '/ekai_labs.jpg' },
-              { name: 'ChaosChain', img: '/chaoschain.jpg' },
-              { name: 'HashgraphDAO', img: '/hashgraphdao.jpg' },
-              { name: 'Maximize', img: '/maximize.jpg' },
-              { name: 'Index Network', img: '/index_network.png' },
-              { name: 'Isek', img: '/isek.jpg' },
-              { name: 'Karum', img: '/karum.jpg' },
-            ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200">
-                <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 max-w-4xl mx-auto mb-12">
-            {[
-              { name: 'Semiotic', img: '/semiotic.jpg' },
-              { name: 'Silence Labs', img: '/silence_labs.jpg' },
-              { name: 'Supermission', img: '/supermission.jpg' },
-              { name: 'Terminal3', img: '/terminal3.jpg' },
-              { name: 'Theoriq', img: '/theoriq_(alpha_protocol).jpg' },
-              { name: 'Virtuals', img: '/virtuals.jpg' },
-            ].map((item, index) => (
-              <div key={index} className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow mx-auto overflow-hidden border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200">
-                <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
+              <div key={index} className="relative group flex flex-col items-center">
+                <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center card-shadow overflow-hidden border border-[#e4e4e7] group-hover:border-[#4C2A85] transition-colors duration-200">
+                  <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
+                </div>
+                <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-[#71717a] opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  {item.name}
+                </span>
               </div>
             ))}
           </div>

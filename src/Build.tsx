@@ -12,7 +12,7 @@ function Build() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl mx-auto text-center mb-[5px]">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#4C2A85]">
-              Build Trustless Agents With ERC-8004
+              Build AI Agents With ERC-8004
             </h1>
             <p className="text-lg md:text-xl text-[#71717a] leading-relaxed max-w-3xl mx-auto">
             Learn how to build on-chain Trustless Agents using the ERC-8004 standard. Give your agents identity, trust, verifiability on Ethereum.
@@ -73,7 +73,7 @@ function Build() {
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full text-center">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-12 text-[#18181b]">
-                  Supported Chains
+                  Supported chains
                 </h3>
 
                 <div className="flex flex-wrap justify-center gap-8 mb-8 max-w-5xl mx-auto">
@@ -106,17 +106,17 @@ function Build() {
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">SDKs</h3>
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">SDKs and libraries</h3>
                 <p className="text-lg text-[#71717a] mb-8">
                   Several community projects are working on SDKs
                 </p>
-                <div className="grid gap-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">ChaosChain</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       TypeScript SDK with Python support in development.
                     </p>
-                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                    <a href="https://docs.chaoscha.in/overview/quickstart" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                       View docs <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -126,12 +126,10 @@ function Build() {
                       TypeScript and Python SDKs with comprehensive guides.
                     </p>
                     <div className="flex items-center gap-3">
-                      <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                        Quick start <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                      <span className="text-[#d4d4d8]">|</span>
+                     
+                     
                       <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                        Full docs <ExternalLink className="w-3.5 h-3.5" />
+                        View docs <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
                   </div>
@@ -140,8 +138,17 @@ function Build() {
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       Alternative SDK approach from Daydreams AI.
                     </p>
-                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      GitHub <ExternalLink className="w-3.5 h-3.5" />
+                    <a href="https://docs.daydreams.systems/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View docs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create-8004-agent</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Alternative SDK approach from Daydreams AI.
+                    </p>
+                    <a href="https://www.npmjs.com/package/create-8004-agent" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View docs <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
                 </div>
@@ -151,7 +158,7 @@ function Build() {
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
               <div className="max-w-full">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
-                  Demo Projects
+                  Demo projects
                 </h3>
                 <p className="text-lg text-[#71717a] mb-2">
                 Learn how to register an agent using ERC-8004, build a scanner, or start accepting payments using the x402 standard. 
@@ -209,7 +216,7 @@ function Build() {
                   </p>
                   <div className="grid gap-6">
                     <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                      <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">GitHub Repository</h4>
+                      <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">GitHub repository</h4>
                       <p className="text-[#71717a] mb-5 leading-relaxed">
                         Open-source ERC-8004 subgraphs maintained by Agent0 and The Graph Foundation across multiple chains.
                       </p>
@@ -232,7 +239,7 @@ function Build() {
 
               <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
                 <div className="max-w-full">
-                  <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Smart Contracts</h3>
+                  <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Smart contracts</h3>
                   <p className="text-lg text-[#71717a] mb-6">
                     See the official ERC-8004 reference materials
                   </p>
@@ -242,7 +249,7 @@ function Build() {
                       <p className="text-[#71717a] mb-5 leading-relaxed">
                         Access the official ERC-8004 Solidity source code.
                       </p>
-                      <a href="https://github.com/neodaoist/erc8004/tree/main/src" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      <a href="https://github.com/erc-8004/erc-8004-contracts/tree/master/contracts" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                         View contracts <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
@@ -251,7 +258,7 @@ function Build() {
                       <p className="text-[#71717a] mb-5 leading-relaxed">
                         Get the compiled ABIs for integration with your applications.
                       </p>
-                      <a href="https://github.com/neodaoist/erc8004/tree/main/out" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      <a href="https://github.com/erc-8004/erc-8004-contracts/tree/master/abis" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                         View ABIs <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
@@ -260,7 +267,7 @@ function Build() {
                       <p className="text-[#71717a] mb-5 leading-relaxed">
                         Find deployed contract addresses across supported chains.
                       </p>
-                      <a href="https://github.com/neodaoist/erc8004#deployments" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      <a href="https://github.com/erc-8004/erc-8004-contracts/blob/master/README.md" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                         View addresses <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
@@ -271,7 +278,7 @@ function Build() {
 
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
               <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Deployment & Best Practices</h3>
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Deployment and best practices</h3>
                 <p className="text-lg text-[#71717a] mb-6">
                   Deploy 8004 registries to your chain and understand best practice for building with 8004
                 </p>
@@ -290,7 +297,7 @@ function Build() {
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       Review our recommended patterns for registration and implementation.
                     </p>
-                    <a href="https://sdk.ag0.xyz/2-best-practices/2-1-intro/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                    <a href="https://github.com/erc-8004/best-practices" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                       Best practices <span className="ml-0.5">&rarr;</span>
                     </a>
                   </div>
