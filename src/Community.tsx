@@ -2,11 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import CommunityEvents from './CommunityEvents';
 import Footer from './Footer';
 
-interface CommunityProps {
-  onNavigate?: (page: string) => void;
-}
-
-function Community({ onNavigate }: CommunityProps = {}) {
+function Community() {
   const scrollToEvents = () => {
     const eventsSection = document.getElementById('community-events');
     if (eventsSection) {
@@ -15,7 +11,7 @@ function Community({ onNavigate }: CommunityProps = {}) {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 flex flex-col">
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
@@ -237,7 +233,7 @@ function Community({ onNavigate }: CommunityProps = {}) {
             ))}
           </div>
 
-          <div className="text-center mb-20">
+          <div className="text-center">
             <a
               href="https://form.fillout.com/t/e8VGKbnf7Wus"
               target="_blank"
@@ -250,12 +246,16 @@ function Community({ onNavigate }: CommunityProps = {}) {
               Include your agent in our directory
             </p>
           </div>
+        </div>
+      </section>
 
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 mt-20 text-[#18181b]">Led by</h2>
+      <section className="py-24 bg-[#fafafa]">
+        <div className="container mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Led by</h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
             Leading organizations collaborating to build open standards
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center max-w-4xl mx-auto mb-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center max-w-4xl mx-auto">
             {[
               { name: 'Metamask', img: '/metamask.jpg' },
               { name: 'Ethereum Foundation', img: '/ef.jpg' },
@@ -270,14 +270,35 @@ function Community({ onNavigate }: CommunityProps = {}) {
               </div>
             ))}
           </div>
-
-          <div id="community-events" className="mt-20">
-            <CommunityEvents />
-          </div>
         </div>
       </section>
 
-      {onNavigate && <Footer onNavigate={onNavigate} />}
+      <section id="community-events" className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <CommunityEvents />
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#18181b]">
+            Still have questions?
+          </h2>
+          <p className="text-lg text-[#71717a] mb-8 max-w-2xl mx-auto">
+            Join our community to connect with other builders and get answers to your questions.
+          </p>
+          <a
+            href="https://t.me/ERC8004"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+          >
+            Join Community
+          </a>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }

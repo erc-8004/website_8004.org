@@ -1,68 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Build from './Build';
 import Community from './Community';
-import FAQ from './FAQ';
+import FAQ from './Learn';
 import ThreeCoreSection from './ThreeCoreSection';
 import Footer from './Footer';
 
-function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const navigateToPage = (page: string) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
+function HomePage() {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46]">
-      <header className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-200 ${scrolled ? 'nav-shadow border-b border-[#e4e4e7]' : ''}`}>
-        <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <button
-            onClick={() => navigateToPage('home')}
-            className="cursor-pointer hover:opacity-80 transition-opacity duration-150"
-          >
-            <img src="/8004_logo_purple copy.png" alt="Trustless Agents" className="h-12" />
-          </button>
-          <div className="flex items-center gap-6 md:gap-8">
-            <button
-              onClick={() => navigateToPage('build')}
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
-            >
-              Build
-            </button>
-            <button
-              onClick={() => navigateToPage('community')}
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
-            >
-              Community
-            </button>
-            <button
-              onClick={() => navigateToPage('faq')}
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
-            >
-              FAQ
-            </button>
-          </div>
-        </nav>
-      </header>
-
-      {currentPage === 'build' ? (
-        <Build onNavigate={navigateToPage} />
-      ) : currentPage === 'community' ? (
-        <Community onNavigate={navigateToPage} />
-      ) : currentPage === 'faq' ? (
-        <FAQ onNavigate={navigateToPage} />
-      ) : (
-        <>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <div className="min-h-screen flex flex-col pt-24">
+      <section className="relative min-h-[calc(100vh-6rem)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
 
@@ -77,19 +25,19 @@ function App() {
             The community for those building autonomous agents on open protocols
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap animate-fade-in-up animate-delay-300">
-            <button
-              onClick={() => navigateToPage('build')}
+            <Link
+              to="/build"
               className="bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 flex items-center gap-2 card-shadow hover:card-shadow-hover"
             >
               Get Started Now
               <ArrowRight className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => navigateToPage('community')}
+            </Link>
+            <Link
+              to="/community"
               className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
             >
               Join Community
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -205,19 +153,75 @@ function App() {
           </p>
 
           <div className="max-w-md mx-auto">
-            <button
-              onClick={() => navigateToPage('build')}
-              className="w-full bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
+            <Link
+              to="/build"
+              className="block w-full bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover text-center"
             >
               Build Now
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      <Footer onNavigate={navigateToPage} />
-        </>
-      )}
+      <Footer />
+    </div>
+  );
+}
+
+function App() {
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return (
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46]">
+      <header className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-200 ${scrolled ? 'nav-shadow border-b border-[#e4e4e7]' : ''}`}>
+        <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
+          <Link
+            to="/"
+            className="cursor-pointer hover:opacity-80 transition-opacity duration-150"
+          >
+            <img src="/8004_logo_purple copy.png" alt="Trustless Agents" className="h-12" />
+          </Link>
+          <div className="flex items-center gap-6 md:gap-8">
+            <Link
+              to="/learn"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+            >
+              Learn
+            </Link>
+            <Link
+              to="/build"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+            >
+              Build
+            </Link>
+            <Link
+              to="/community"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+            >
+              Community
+            </Link>
+          </div>
+        </nav>
+      </header>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/build" element={<Build />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/learn" element={<FAQ />} />
+      </Routes>
     </div>
   );
 }

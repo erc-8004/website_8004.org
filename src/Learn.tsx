@@ -2,11 +2,7 @@ import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import Footer from './Footer';
 
-interface FAQProps {
-  onNavigate?: (page: string) => void;
-}
-
-function FAQ({ onNavigate }: FAQProps = {}) {
+function Learn() {
   const [openIndex, setOpenIndex] = useState<string | null>(null);
 
   const faqSections = [
@@ -133,7 +129,7 @@ function FAQ({ onNavigate }: FAQProps = {}) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 flex flex-col">
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
@@ -141,10 +137,10 @@ function FAQ({ onNavigate }: FAQProps = {}) {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#4C2A85]">
-              Frequently Asked Questions
+              Learn
             </h1>
             <p className="text-lg md:text-xl text-[#71717a] leading-relaxed">
-              Find answers to common questions about 8004.
+              Everything you need to know about ERC-8004.
             </p>
           </div>
         </div>
@@ -254,9 +250,9 @@ function FAQ({ onNavigate }: FAQProps = {}) {
         </div>
       </section>
 
-      {onNavigate && <Footer onNavigate={onNavigate} />}
+      <Footer />
     </div>
   );
 }
 
-export default FAQ;
+export default Learn;

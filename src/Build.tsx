@@ -1,13 +1,9 @@
 import { ExternalLink } from 'lucide-react';
 import Footer from './Footer';
 
-interface BuildProps {
-  onNavigate?: (page: string) => void;
-}
-
-function Build({ onNavigate }: BuildProps = {}) {
+function Build() {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 pb-20">
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 flex flex-col">
       <section className="relative py-20 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
@@ -32,7 +28,7 @@ function Build({ onNavigate }: BuildProps = {}) {
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
                 <p className="text-lg text-[#71717a] mb-8">
                 Register Trustless Agent without writing code. Browse hundreds of agents and their reputation on the following scanners                </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">8004scan.io</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
@@ -107,6 +103,102 @@ function Build({ onNavigate }: BuildProps = {}) {
               </div>
             </div>
 
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">SDKs</h3>
+                <p className="text-lg text-[#71717a] mb-8">
+                  Several community projects are working on SDKs
+                </p>
+                <div className="grid gap-6">
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">ChaosChain</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      TypeScript SDK with Python support in development.
+                    </p>
+                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View docs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      TypeScript and Python SDKs with comprehensive guides.
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                        Quick start <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                      <span className="text-[#d4d4d8]">|</span>
+                      <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                        Full docs <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Lucid Agents</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Alternative SDK approach from Daydreams AI.
+                    </p>
+                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      GitHub <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+              <div className="max-w-full">
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
+                  Demo Projects
+                </h3>
+                <p className="text-lg text-[#71717a] mb-2">
+                Learn how to register an agent using ERC-8004, build a scanner, or start accepting payments using the x402 standard. 
+                </p>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
+                    <div className="aspect-[5/4] bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                      <img src="/hf_20260116_132416_4a98434d-799b-49a1-bb49-6303ff0eb193-2.png" alt="Create 8004 agent" className="w-full h-full object-cover" />
+                    </div>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 agent</h4>
+                    <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
+                      Build an AI Agent from scratch using the ERC-8004 standard.
+                    </p>
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto">
+                      View Demo
+                    </button>
+                  </div>
+
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
+                    <div className="aspect-[5/4] bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                      <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 scanner" className="w-full h-full object-cover" />
+                    </div>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 scanner</h4>
+                    <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
+                      Build an explorer to browse agents and their reputation on-chain.
+                    </p>
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto">
+                      View Demo
+                    </button>
+                  </div>
+
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
+                    <div className="aspect-[5/4] bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                      <img src="/image.png" alt="Create 8004 x x402 agent on Coinbase" className="w-full h-full object-cover" />
+                    </div>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 agent with x402</h4>
+                    <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
+                      Utilized ERC-8004 with x402, a standard for programmable payments on Ethereum.
+                    </p>
+                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto">
+                      View Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
                 <div className="max-w-full">
@@ -176,103 +268,7 @@ function Build({ onNavigate }: BuildProps = {}) {
               </div>
             </div>
 
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
-              <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">
-                  Demo Projects
-                </h3>
-                <p className="text-lg text-[#71717a] mb-2">
-                Learn how to register an agent using ERC-8004, build a scanner, or start accepting payments using the x402 standard. 
-                </p>
-
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                    <div className="aspect-square bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                      <img src="/hf_20260116_132416_4a98434d-799b-49a1-bb49-6303ff0eb193-2.png" alt="Create 8004 agent" className="w-full h-full object-cover" />
-                    </div>
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 agent</h4>
-                    <p className="text-[#71717a] mb-6 leading-relaxed">
-                      Build an AI Agent from scratch using the ERC-8004 standard.
-                    </p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
-                      View Demo
-                    </button>
-                  </div>
-
-                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                    <div className="aspect-square bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                      <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 scanner" className="w-full h-full object-cover" />
-                    </div>
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 scanner</h4>
-                    <p className="text-[#71717a] mb-6 leading-relaxed">
-                      Build an explorer to browse agents and their reputation on-chain.
-                    </p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
-                      View Demo
-                    </button>
-                  </div>
-
-                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover">
-                    <div className="aspect-square bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                      <img src="/image.png" alt="Create 8004 x x402 agent on Coinbase" className="w-full h-full object-cover" />
-                    </div>
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 agent with x402</h4>
-                    <p className="text-[#71717a] mb-6 leading-relaxed">
-                      Utilized ERC-8004 with x402, a standard for programmable payments on Ethereum.
-                    </p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white">
-                      View Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7]">
-              <div className="max-w-full">
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">SDKs</h3>
-                <p className="text-lg text-[#71717a] mb-8">
-                  Several community projects are working on SDKs
-                </p>
-                <div className="grid gap-6">
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">ChaosChain</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      TypeScript SDK with Python support in development.
-                    </p>
-                    <a href="https://chaoschain.dev/docs" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      View docs <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      TypeScript and Python SDKs with comprehensive guides.
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <a href="https://sdk.ag0.xyz/3-examples/3-1-quick-start/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                        Quick start <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                      <span className="text-[#d4d4d8]">|</span>
-                      <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                        Full docs <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Lucid Agents</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      Alternative SDK approach from Daydreams AI.
-                    </p>
-                    <a href="https://github.com/daydreamsai/lucid-agents" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      GitHub <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8 mt-16">
               <div className="max-w-full">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-3 text-[#18181b]">Deployment & Best Practices</h3>
                 <p className="text-lg text-[#71717a] mb-6">
@@ -335,7 +331,7 @@ function Build({ onNavigate }: BuildProps = {}) {
         </div>
       </section>
 
-      {onNavigate && <Footer onNavigate={onNavigate} />}
+      <Footer />
     </div>
   );
 }

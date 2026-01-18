@@ -1,12 +1,9 @@
+import { Link } from 'react-router-dom';
 import { Twitter, Github, Send, Mail } from 'lucide-react';
 
-interface FooterProps {
-  onNavigate: (page: string) => void;
-}
-
-function Footer({ onNavigate }: FooterProps) {
+function Footer() {
   return (
-    <footer className="py-16 bg-white border-t border-[#e4e4e7]">
+    <footer className="mt-auto py-16 bg-white border-t border-[#e4e4e7]">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
@@ -20,36 +17,36 @@ function Footer({ onNavigate }: FooterProps) {
             <h3 className="font-semibold text-[#18181b] mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => onNavigate('home')}
+                <Link
+                  to="/"
                   className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm"
                 >
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onNavigate('build')}
+                <Link
+                  to="/learn"
+                  className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm"
+                >
+                  Learn
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/build"
                   className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm"
                 >
                   Build
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onNavigate('community')}
+                <Link
+                  to="/community"
                   className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm"
                 >
                   Community
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onNavigate('faq')}
-                  className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm"
-                >
-                  FAQ
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -107,12 +104,6 @@ function Footer({ onNavigate }: FooterProps) {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="pt-8 border-t border-[#e4e4e7] text-center">
-          <p className="text-[#71717a] text-sm">
-            <span className="text-[#4C2A85] font-semibold">Trustless Agents</span> | Building the open, trustless agentic web
-          </p>
         </div>
       </div>
     </footer>
