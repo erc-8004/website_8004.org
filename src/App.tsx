@@ -4,6 +4,8 @@ import { ArrowRight } from 'lucide-react';
 import Build from './Build';
 import Community from './Community';
 import FAQ from './Learn';
+import Blog from './Blog';
+import BlogPost from './BlogPost';
 import ThreeCoreSection from './ThreeCoreSection';
 import BuildCTA from './BuildCTA';
 import Footer from './Footer';
@@ -195,6 +197,12 @@ function App() {
             >
               Community
             </Link>
+            <Link
+              to="/blog"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium"
+            >
+              Blog
+            </Link>
           </div>
         </nav>
       </header>
@@ -204,6 +212,8 @@ function App() {
         <Route path="/build" element={<Build />} />
         <Route path="/community" element={<Community />} />
         <Route path="/learn" element={<FAQ />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </div>
   );
