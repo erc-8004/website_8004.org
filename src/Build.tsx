@@ -5,7 +5,7 @@ import Footer from './Footer';
 function Build() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] flex flex-col">
-      <section className="relative pt-32 pb-20 bg-white overflow-hidden">
+      <section className="relative pt-40 pb-28 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
 
@@ -76,7 +76,7 @@ function Build() {
                   Supported chains
                 </h3>
 
-                <div className="flex flex-wrap justify-center gap-8 mb-8 max-w-5xl mx-auto">
+                <div className="flex flex-wrap justify-center gap-12 mb-8 max-w-5xl mx-auto">
                   {[
                     { name: 'Ethereum', logo: '/logos/chainLogos/eth-mainnet.svg', comingSoon: false },
                     { name: 'Base', logo: '/logos/chainLogos/base-mainnet.svg', comingSoon: false },
@@ -85,7 +85,7 @@ function Build() {
                     { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
-                      <div className={`w-20 h-20 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
+                      <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
                         <img src={chain.logo} alt={chain.name} className="w-full h-full object-cover" />
                       </div>
                       <div className="flex flex-col items-center">
@@ -184,7 +184,7 @@ function Build() {
 
                   <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
                     <div className="aspect-[5/4] bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                      <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 scanner" className="w-full h-full object-cover" />
+                      <img src="/image.png" alt="Create 8004 scanner" className="w-full h-full object-cover" />
                     </div>
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 scanner</h4>
                     <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
@@ -197,7 +197,7 @@ function Build() {
 
                   <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
                     <div className="aspect-[5/4] bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                      <img src="/image.png" alt="Create 8004 x x402 agent on Coinbase" className="w-full h-full object-cover" />
+                      <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 x x402 agent on Coinbase" className="w-full h-full object-cover" />
                     </div>
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 agent with x402</h4>
                     <p className="text-[#71717a] mb-6 leading-relaxed flex-1">

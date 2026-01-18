@@ -7,7 +7,9 @@ function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
-            <img src="/8004_logo_purple copy.png" alt="Trustless Agents" className="h-10 mb-4" />
+            <Link to="/" className="inline-block hover:opacity-80 transition-opacity duration-150">
+              <img src="/8004_logo_purple copy.png" alt="Trustless Agents" className="h-10 mb-4" />
+            </Link>
             <p className="text-[#71717a] text-sm leading-relaxed">
               Building the open, trustless agentic web
             </p>

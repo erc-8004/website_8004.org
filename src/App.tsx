@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X, ExternalLink } from 'lucide-react';
 import Build from './Build';
 import Community from './Community';
 import FAQ from './Learn';
@@ -41,6 +41,17 @@ function HomePage() {
             >
               Join Community
             </Link>
+          </div>
+          <div className="mt-8 animate-fade-in-up animate-delay-300">
+            <a
+              href="https://eips.ethereum.org/EIPS/eip-8004"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#4C2A85] hover:text-[#412471] underline inline-flex items-center gap-1"
+            >
+              View the ERC-8004 specs
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </section>
