@@ -78,15 +78,15 @@ function Build() {
 
                 <div className="flex flex-wrap justify-center gap-8 mb-8 max-w-5xl mx-auto">
                   {[
-                    { name: 'Ethereum', comingSoon: false },
-                    { name: 'Base', comingSoon: false },
-                    { name: 'Polygon', comingSoon: false },
-                    { name: 'Linea', comingSoon: true },
-                    { name: 'Arbitrum', comingSoon: true },
+                    { name: 'Ethereum', logo: '/logos/EF.jpg', comingSoon: false },
+                    { name: 'Base', logo: '/logos/base.jpg', comingSoon: false },
+                    { name: 'Polygon', logo: '/logos/polygon.jpg', comingSoon: false },
+                    { name: 'Linea', logo: '/logos/LineaBuild.png', comingSoon: true },
+                    { name: 'Arbitrum', logo: '/logos/OffchainLabs.png', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
-                      <div className={`w-20 h-20 rounded-full border-2 flex items-center justify-center transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7]' : 'bg-[#f3f0ff] border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
-                        <div className={`w-10 h-10 rounded-full ${chain.comingSoon ? 'bg-[#d4d4d8]' : 'bg-[#4C2A85]'}`}></div>
+                      <div className={`w-20 h-20 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
+                        <img src={chain.logo} alt={chain.name} className="w-full h-full object-cover" />
                       </div>
                       <div className="flex flex-col items-center">
                         <span className={`text-sm font-medium text-center ${chain.comingSoon ? 'text-[#a1a1aa]' : 'text-[#3f3f46]'}`}>{chain.name}</span>
