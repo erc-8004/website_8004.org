@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import BuildCTA from './BuildCTA';
 import Footer from './Footer';
 
 function Learn() {
@@ -129,8 +130,8 @@ function Learn() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 flex flex-col">
-      <section className="relative py-20 bg-white overflow-hidden">
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] flex flex-col">
+      <section className="relative pt-32 pb-20 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
 
@@ -231,24 +232,9 @@ function Learn() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#18181b]">
-            Still have questions?
-          </h2>
-          <p className="text-lg text-[#71717a] mb-8 max-w-2xl mx-auto">
-            Join our community to connect with other builders and get answers to your questions.
-          </p>
-          <a
-            href="https://t.me/ERC8004"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
-          >
-            Join Community
-          </a>
-        </div>
-      </section>
+      
+
+      <BuildCTA />
 
       <Footer />
     </div>

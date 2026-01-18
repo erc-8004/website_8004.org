@@ -5,12 +5,13 @@ import Build from './Build';
 import Community from './Community';
 import FAQ from './Learn';
 import ThreeCoreSection from './ThreeCoreSection';
+import BuildCTA from './BuildCTA';
 import Footer from './Footer';
 
 function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col pt-24">
-      <section className="relative min-h-[calc(100vh-6rem)] flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen flex flex-col">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-white">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
 
@@ -121,7 +122,7 @@ function HomePage() {
 
       <section className="py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Organized by</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Co-authored by</h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
             Leading organizations collaborating to build open standards for the agent economy
           </p>
@@ -143,25 +144,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="build" className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 text-[#4C2A85]">
-            Build Trustless Agents
-          </h2>
-          <p className="text-center text-[#71717a] text-lg mb-12 max-w-2xl mx-auto">
-            Get started now, or leave your details to qualify for future Trustless Agents builder program.
-          </p>
-
-          <div className="max-w-md mx-auto">
-            <Link
-              to="/build"
-              className="block w-full bg-[#4C2A85] text-white hover:bg-[#412471] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover text-center"
-            >
-              Build Now
-            </Link>
-          </div>
-        </div>
-      </section>
+      <BuildCTA />
 
       <Footer />
     </div>
@@ -196,19 +179,19 @@ function App() {
           <div className="flex items-center gap-6 md:gap-8">
             <Link
               to="/learn"
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium"
             >
               Learn
             </Link>
             <Link
               to="/build"
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium"
             >
               Build
             </Link>
             <Link
               to="/community"
-              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm font-medium"
+              className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium"
             >
               Community
             </Link>

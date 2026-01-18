@@ -1,10 +1,11 @@
 import { ExternalLink } from 'lucide-react';
+import BuildCTA from './BuildCTA';
 import Footer from './Footer';
 
 function Build() {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 flex flex-col">
-      <section className="relative py-20 bg-white overflow-hidden">
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] flex flex-col">
+      <section className="relative pt-32 pb-20 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
 
@@ -330,6 +331,8 @@ function Build() {
           </div>
         </div>
       </section>
+
+      <BuildCTA />
 
       <Footer />
     </div>

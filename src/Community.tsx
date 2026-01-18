@@ -11,8 +11,8 @@ function Community() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] pt-24 flex flex-col">
-      <section className="relative py-20 bg-white overflow-hidden">
+    <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] flex flex-col">
+      <section className="relative pt-32 pb-20 bg-white overflow-hidden">
         <div className="absolute inset-0 grid-pattern" />
         <div className="absolute inset-0 gradient-radial" />
 
@@ -251,7 +251,7 @@ function Community() {
 
       <section className="py-24 bg-[#fafafa]">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Led by</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6 text-[#18181b]">Co-authored by</h2>
           <p className="text-center text-[#71717a] text-lg mb-16 max-w-3xl mx-auto">
             Leading organizations collaborating to build open standards
           </p>
