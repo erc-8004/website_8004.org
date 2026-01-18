@@ -132,8 +132,8 @@ function Community() {
                   <img src="/logos/ChaosChain.jpg" alt="Chaoschain" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[#18181b]">Sumeet</p>
-                  <p className="text-sm text-[#71717a]">Chaoschain</p>
+                  <p className="font-semibold text-[#18181b]">Sumeet Chougule</p>
+                  <p className="text-sm text-[#71717a]">Founder, Chaoschain</p>
                 </div>
               </div>
             </div>
