@@ -78,11 +78,11 @@ function Build() {
 
                 <div className="flex flex-wrap justify-center gap-8 mb-8 max-w-5xl mx-auto">
                   {[
-                    { name: 'Ethereum', logo: '/logos/EF.jpg', comingSoon: false },
-                    { name: 'Base', logo: '/logos/base.jpg', comingSoon: false },
-                    { name: 'Polygon', logo: '/logos/polygon.jpg', comingSoon: false },
-                    { name: 'Linea', logo: '/logos/LineaBuild.png', comingSoon: true },
-                    { name: 'Arbitrum', logo: '/logos/OffchainLabs.png', comingSoon: true },
+                    { name: 'Ethereum', logo: '/logos/chainLogos/eth-mainnet.svg', comingSoon: false },
+                    { name: 'Base', logo: '/logos/chainLogos/base-mainnet.svg', comingSoon: false },
+                    { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: false },
+                    { name: 'Linea', logo: '/logos/chainLogos/linea-mainnet.svg', comingSoon: true },
+                    { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
                       <div className={`w-20 h-20 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
