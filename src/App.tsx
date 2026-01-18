@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 import Build from './Build';
 import Community from './Community';
 import FAQ from './Learn';
@@ -155,6 +155,7 @@ function HomePage() {
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -163,9 +164,10 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top on route change
+  // Scroll to top and close mobile menu on route change
   useEffect(() => {
     window.scrollTo(0, 0);
+    setMobileMenuOpen(false);
   }, [location.pathname]);
 
   return (
@@ -178,7 +180,9 @@ function App() {
           >
             <img src="/8004_logo_purple copy.png" alt="Trustless Agents" className="h-12" />
           </Link>
-          <div className="flex items-center gap-6 md:gap-8">
+          
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-8">
             <Link
               to="/learn"
               className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium"
@@ -204,7 +208,47 @@ function App() {
               Blog
             </Link>
           </div>
+
+          {/* Mobile hamburger */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-[#71717a] hover:text-[#4C2A85] transition-colors"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </nav>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-[#e4e4e7] px-6 py-4">
+            <div className="flex flex-col gap-4">
+              <Link
+                to="/learn"
+                className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium py-2"
+              >
+                Learn
+              </Link>
+              <Link
+                to="/build"
+                className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium py-2"
+              >
+                Build
+              </Link>
+              <Link
+                to="/community"
+                className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium py-2"
+              >
+                Community
+              </Link>
+              <Link
+                to="/blog"
+                className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-base font-medium py-2"
+              >
+                Blog
+              </Link>
+            </div>
+          </div>
+        )}
       </header>
 
       <Routes>

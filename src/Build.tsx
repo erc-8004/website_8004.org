@@ -70,7 +70,7 @@ function Build() {
               </div>
             </div>
 
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] mb-8">
+            <div className="py-12 mb-8">
               <div className="max-w-full text-center">
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-12 text-[#18181b]">
                   Supported chains
@@ -78,16 +78,20 @@ function Build() {
 
                 <div className="flex flex-wrap justify-center gap-8 mb-8 max-w-5xl mx-auto">
                   {[
-                    'Ethereum Mainnet',
-                    'Ethereum Sepolia',
-                    'Base Mainnet',
-                    'Base Sepolia',
+                    { name: 'Ethereum', comingSoon: false },
+                    { name: 'Base', comingSoon: false },
+                    { name: 'Polygon', comingSoon: false },
+                    { name: 'Linea', comingSoon: true },
+                    { name: 'Arbitrum', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
-                      <div className="w-20 h-20 rounded-full bg-[#f3f0ff] border-2 border-[#e4e4e7] flex items-center justify-center hover:border-[#4C2A85] transition-colors duration-200">
-                        <div className="w-10 h-10 rounded-full bg-[#4C2A85]"></div>
+                      <div className={`w-20 h-20 rounded-full border-2 flex items-center justify-center transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7]' : 'bg-[#f3f0ff] border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
+                        <div className={`w-10 h-10 rounded-full ${chain.comingSoon ? 'bg-[#d4d4d8]' : 'bg-[#4C2A85]'}`}></div>
                       </div>
-                      <span className="text-sm font-medium text-[#3f3f46] text-center">{chain}</span>
+                      <div className="flex flex-col items-center">
+                        <span className={`text-sm font-medium text-center ${chain.comingSoon ? 'text-[#a1a1aa]' : 'text-[#3f3f46]'}`}>{chain.name}</span>
+                        {chain.comingSoon && <span className="text-xs text-[#a1a1aa]">coming soon</span>}
+                      </div>
                     </div>
                   ))}
                 </div>

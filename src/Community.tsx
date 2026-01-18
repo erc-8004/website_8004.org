@@ -149,7 +149,7 @@ function Community() {
             With global builders and contributors
           </h3>
 
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-x-6 gap-y-8 max-w-3xl mx-auto mb-12">
+          <div className="grid grid-cols-4 md:grid-cols-9 gap-x-6 gap-y-8 max-w-5xl mx-auto mb-12">
             {[
               { name: '0xGasless', img: '/logos/0xGasless.jpg' },
               { name: 'AEON', img: '/logos/AEON.jpg' },
