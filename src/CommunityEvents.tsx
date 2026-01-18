@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Calendar, ExternalLink, Users } from 'lucide-react';
-import { createClient } from '@supabase/supabase-js';
+import eventsData from './data/events.json';
 
 interface Event {
   id: string;
@@ -12,11 +12,6 @@ interface Event {
   updated_at: string;
 }
 
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
-
 function CommunityEvents() {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
@@ -26,22 +21,30 @@ function CommunityEvents() {
     fetchEvents();
   }, []);
 
-  const fetchEvents = async () => {
+  const parseDate = (dateString: string): Date => {
+    const parts = dateString.split('/');
+    if (parts.length === 3) {
+      const [day, month, year] = parts;
+      const fullYear = `20${year}`;
+      return new Date(`${fullYear}-${month}-${day}`);
+    }
+    return new Date(dateString);
+  };
+
+  const fetchEvents = () => {
     try {
       setLoading(true);
-      const { data, error: fetchError } = await supabase
-        .from('events')
-        .select('*')
-        .order('date', { ascending: true });
-
-      if (fetchError) {
-        throw fetchError;
-      }
-
-      setEvents(data || []);
+      // Import events from JSON and sort by date
+      const sortedEvents = [...eventsData].sort((a, b) => {
+        const dateA = parseDate(a.date);
+        const dateB = parseDate(b.date);
+        return dateA.getTime() - dateB.getTime();
+      });
+      setEvents(sortedEvents);
+      setError(null);
     } catch (err) {
       setError('Unable to load events');
-      console.error('Error fetching events:', err);
+      console.error('Error loading events:', err);
     } finally {
       setLoading(false);
     }

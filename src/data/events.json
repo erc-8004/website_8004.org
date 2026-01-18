@@ -1,0 +1,38 @@
+[
+  {
+    "id": "trustless-agent-day",
+    "title": "Trustless Agent Day (Yellow Pavilion, M2 Stage, La Rural - You Need A Devconnect Ticket!)",
+    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/ma/b3d60fee-0d9e-4bbf-92fe-4df6ecbbf61c.png",
+    "date": "21/11/25",
+    "url": "https://luma.com/i1vu0n7p",
+    "created_at": "2025-01-16T00:00:00Z",
+    "updated_at": "2025-01-16T00:00:00Z"
+  },
+  {
+    "id": "community-call-3",
+    "title": "8004 Community Call #3",
+    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/vw/013f78cb-dce7-497a-a126-9afda3d0a1ba.jpg",
+    "date": "12/11/25",
+    "url": "https://luma.com/2kvxberc",
+    "created_at": "2025-01-16T00:00:00Z",
+    "updated_at": "2025-01-16T00:00:00Z"
+  },
+  {
+    "id": "community-call-2",
+    "title": "8004 Community Call #2",
+    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/vw/013f78cb-dce7-497a-a126-9afda3d0a1ba.jpg",
+    "date": "22/10/25",
+    "url": "https://luma.com/rntalpjf",
+    "created_at": "2025-01-16T00:00:00Z",
+    "updated_at": "2025-01-16T00:00:00Z"
+  },
+  {
+    "id": "community-call-1",
+    "title": "8004 Community Call (CC)",
+    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/vw/013f78cb-dce7-497a-a126-9afda3d0a1ba.jpg",
+    "date": "23/09/25",
+    "url": "https://luma.com/do1lt7vq",
+    "created_at": "2025-01-16T00:00:00Z",
+    "updated_at": "2025-01-16T00:00:00Z"
+  }
+]

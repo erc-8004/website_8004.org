@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
-import Learn from './Learn';
 import Build from './Build';
 import Community from './Community';
 import FAQ from './FAQ';
@@ -55,12 +54,8 @@ function App() {
         </nav>
       </header>
 
-      {currentPage === 'learn' ? (
-        <Learn />
-      ) : currentPage === 'build' ? (
+      {currentPage === 'build' ? (
         <Build onNavigate={navigateToPage} />
-      ) : currentPage === '8004' ? (
-        <Learn />
       ) : currentPage === 'community' ? (
         <Community onNavigate={navigateToPage} />
       ) : currentPage === 'faq' ? (
