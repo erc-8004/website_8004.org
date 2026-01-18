@@ -142,7 +142,7 @@ function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center max-w-4xl mx-auto">
             {[
               { name: 'Metamask', img: '/metamask.jpg' },
-              { name: 'Ethereum Foundation', img: '/ef.jpg' },
+              { name: 'Ethereum Foundation', img: '/logos/chainLogos/eth-mainnet.svg' },
               { name: 'Google', img: '/google.jpg' },
               { name: 'Coinbase', img: '/coinbase.png' },
             ].map((org, index) => (

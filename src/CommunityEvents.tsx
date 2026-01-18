@@ -152,7 +152,7 @@ function CommunityEvents() {
                 )}
                 <div className={`absolute top-3 right-3 backdrop-blur-sm rounded-lg px-3 py-1.5 text-sm font-medium ${
                   isUpcoming(event.date) 
-                    ? 'bg-green-500/90 text-white' 
+                    ? 'bg-[#4C2A85] text-white' 
                     : 'bg-gray-500/90 text-white'
                 }`}>
                   {isUpcoming(event.date) ? 'Upcoming' : 'Ended'}
