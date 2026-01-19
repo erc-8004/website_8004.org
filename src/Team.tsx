@@ -36,12 +36,6 @@ const teamMembers: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/isha-sangani/',
   },
   {
-    name: 'Jessy H',
-    image: '/team/jessy-h.jpeg',
-    linkedin: 'https://www.linkedin.com/in/jessyio/',
-    twitter: 'https://x.com/13yearoldvc',
-  },
-  {
     name: 'Leonard Tan',
     image: '/team/leonard-tan.jpeg',
     linkedin: 'https://www.linkedin.com/in/lentan/',
@@ -51,6 +45,12 @@ const teamMembers: TeamMember[] = [
     image: '/team/vitto-rivabella.jpeg',
     linkedin: 'https://www.linkedin.com/in/vittorio-rivabella/',
     twitter: 'https://x.com/VittoStack',
+  },
+  {
+    name: 'Jessy H',
+    image: '/team/jessy-h.jpeg',
+    linkedin: 'https://www.linkedin.com/in/jessyio/',
+    twitter: 'https://x.com/13yearoldvc',
   },
 ];
 
