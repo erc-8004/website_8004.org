@@ -125,7 +125,7 @@ function Build() {
                     </a>
                   </div>
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0</h4>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0 SDK</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       TypeScript and Python SDKs with comprehensive guides.
                     </p>
@@ -220,9 +220,9 @@ function Build() {
                   </p>
                   <div className="grid gap-6">
                     <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                      <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">GitHub repository</h4>
+                      <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Repository & endpoints</h4>
                       <p className="text-[#71717a] mb-5 leading-relaxed">
-                        Open-source ERC-8004 subgraphs maintained by Agent0 and The Graph Foundation across multiple chains.
+                        Open-source ERC-8004 subgraphs maintained by Agent0 across multiple chains.
                       </p>
                       <a href="https://github.com/agent0lab/subgraph" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                         View on GitHub <ExternalLink className="w-3.5 h-3.5" />
@@ -288,21 +288,21 @@ function Build() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Deploy on your chain</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      Want to bring ERC-8004 to your blockchain? Contact us to coordinate singleton deployment.
-                    </p>
-                    <a href="mailto:team@8004.org" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] bg-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 inline-block">
-                      Email team@8004.org
-                    </a>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Building on ERC-8004</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       Review our recommended patterns for registration and implementation.
                     </p>
                     <a href="https://github.com/erc-8004/best-practices" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                       Best practices <span className="ml-0.5">&rarr;</span>
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Deploy on your chain</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      Want to bring ERC-8004 to your blockchain? Contact us to coordinate singleton deployment.
+                    </p>
+                    <a href="mailto:team@8004.org" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] bg-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 inline-block">
+                      Email team@8004.org
                     </a>
                   </div>
                 </div>

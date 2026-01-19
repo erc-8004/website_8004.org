@@ -118,7 +118,7 @@ function HomePage() {
             <div className="flex flex-col md:flex-row items-center gap-10">
               <div className="w-full md:w-1/2 md:order-1">
                 <p className="text-[#3f3f46] text-lg leading-relaxed">
-                  Trust, reputation, and payments - things humans have relied on for centuries - must be re-established for autonomous software. Outside of this, many more standards will emerge.
+                  Trust, reputation, and payments - things humans have relied on for centuries - must be re-established for autonomous software.
                 </p>
               </div>
               <div className="w-full md:w-1/2 md:order-2">

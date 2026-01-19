@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Twitter, Github, Send, Mail } from 'lucide-react';
+import { Github, Send, Mail } from 'lucide-react';
 
 function Footer() {
   return (
@@ -85,18 +85,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/trustlessagents"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm flex items-center gap-2"
-                >
-                  <Twitter className="w-4 h-4" />
-                  Follow on Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8004.md"
+                  href="https://github.com/erc-8004/erc-8004-contracts"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm flex items-center gap-2"
@@ -113,7 +102,7 @@ function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="mailto:team@trustlessagents.org"
+                  href="mailto:team@8004.org"
                   className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4" />
