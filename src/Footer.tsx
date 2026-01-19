@@ -58,6 +58,14 @@ function Footer() {
                   Blog
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/team"
+                  className="text-[#71717a] hover:text-[#4C2A85] transition-colors duration-150 text-sm"
+                >
+                  Team
+                </Link>
+              </li>
             </ul>
           </div>
 
