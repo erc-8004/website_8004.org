@@ -29,7 +29,7 @@ function Build() {
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
                 <p className="text-lg text-[#71717a] mb-8">
                 Register Trustless Agent without writing code. Browse hundreds of agents and their reputation on the following scanners                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">8004scan.io</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
@@ -57,15 +57,6 @@ function Build() {
                       Visit <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Supermission</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
-                      Agent mission tracking and insights.
-                    </p>
-                    <a href="https://supermission.ai" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      Visit <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -83,6 +74,8 @@ function Build() {
                     { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: false },
                     { name: 'Linea', logo: '/logos/chainLogos/linea-mainnet.svg', comingSoon: true },
                     { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: true },
+                    { name: 'Optimism', logo: '/logos/chainLogos/op-mainnet.svg', comingSoon: true },
+                    { name: 'SKALE', logo: '/logos/chainLogos/skale-mainnet.svg', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
                       <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>

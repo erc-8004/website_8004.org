@@ -1,3 +1,10 @@
+---
+title: "Welcome to ERC-8004"
+date: "2026-01-18"
+description: "Introducing the Trustless Agent standard and our community"
+slug: "welcome-to-8004"
+---
+
 # ERC-8004 is Live on Ethereum Mainnet
 
 **Today, ERC-8004, the standard for Trustless Agents, is officially live on Ethereum mainnet.**
@@ -7,53 +14,70 @@ AI agents are everywhere: booking flights, managing portfolios, writing code, co
 ERC-8004 fixes this. Three on-chain registries give agents portable identity, verifiable reputation, and cryptographic validation, so they can operate as accountable economic actors across organizational boundaries.
 
 > "Without ERC-8004, AI agents are just code. With it, they're accountable economic actors. This is the unlock."  
-> — **Sumeet Chougule**, Founder of ChaosChain
+> — **Marco De Rossi**, MetaMask, AI Lead
 
 ## What is ERC-8004
 
-ERC-8004 defines three on-chain registries:
+ERC-8004 is an Ethereum standard that defines three on-chain registries for agent identity, reputation, and validation. The registries are deployed as singleton contracts, meaning there's one canonical deployment per chain that all agents share.
 
-1. **Identity Registry**: Agents register via ERC-721 tokens linked to metadata describing their capabilities, endpoints, and trust preferences.
-2. **Reputation Registry**: Clients submit feedback (scores, tags, reviews) after interacting with agents, creating a permanent on-chain track record.
-3. **Validation Registry**: Third-party validators can verify agent work using stake-backed re-execution, zero-knowledge proofs, or TEE attestations.
+### Identity Registry
 
-Together, these registries create neutral infrastructure for agent discovery, trust, and verification.
+Each agent registers by minting an ERC-721 token. The token ID becomes the agent's unique identifier, and the token URI points to an off-chain metadata file called the "agent card."
 
-## What You Can Build
+The agent card is a JSON file containing:
+- **Name and description**: What the agent does
+- **Endpoints**: How to reach the agent (A2A Protocol, Model Context Protocol, HTTP, etc.)
+- **Supported trust models**: Which validation methods the agent supports
+- **DID/ENS**: Optional decentralized identifiers for cross-platform resolution
 
-### Give Your Agent a Portable Identity
+The agent's owner controls the NFT. Transfer the token, transfer ownership. The `agentWallet` field specifies where the agent receives payments, with ownership verified via EIP-712 signatures (for EOAs) or ERC-1271 (for smart contract wallets).
 
-The **Identity Registry** issues each agent a unique ERC-721 token linked to an off-chain metadata file (the "agent card"). This card contains the agent's name, capabilities, supported protocols (A2A, MCP, DID, ENS), and trust preferences.
+### Reputation Registry
 
-Agents own their identity. No platform lock-in. Transfer the NFT, transfer ownership.
+After interacting with an agent, clients can submit structured feedback on-chain. Each feedback entry includes:
+- A **score** TBD TBD TBD
+- **Tags** for categorization (e.g., "fast", "accurate", "DeFi")
+- Optional **feedbackURI** pointing to detailed off-chain reviews
+- A **content hash** to verify integrity of off-chain data
 
-### Let Users Verify Track Records
+Feedback is permanent. It can't be deleted, only responded to by the agent. This creates an immutable audit trail. Clients can query feedback by agent, by reviewer, by tag, or by time range. The registry emits events for every feedback submission, making it easy to index with subgraphs.
 
-The **Reputation Registry** lets clients, whether humans or other agents, submit structured feedback after interacting with an agent: scores (0-100), tags, and optional detailed reviews with content hashes for integrity.
+Reputation doesn't prescribe how to aggregate scores. Different applications can weight feedback differently, filter by trusted reviewers, or build their own scoring algorithms on top of the raw data.
 
-Reputation accumulates on-chain. It's composable, queryable, and permanent. Build recommendation systems, filter by category, or let users sort agents by rating before they interact.
+### Validation Registry
 
-### Add Cryptographic Guarantees
+For high-stakes tasks where reputation isn't sufficient, the Validation Registry enables third-party verification of agent work.
 
-For high-stakes tasks, reputation isn't enough. The **Validation Registry** enables third-party validators to verify agent work using:
+The flow works like this:
+1. An agent (or client) submits a **validation request** specifying the validator address, a request URI containing task details, and a content hash
+2. The validator executes the verification off-chain using their chosen method
+3. The validator submits a **validation response** with a score (0-100), optional tags, and evidence URI/hash
 
-- **Stake-backed re-execution**: validators put skin in the game
-- **Zero-knowledge proofs**: cryptographic verification of computation  
-- **TEE attestations**: hardware-backed execution guarantees
+The standard supports multiple trust models:
+- **Stake-backed re-execution**: Validators stake tokens and re-run the agent's task. If results match, validation passes. If not, stake can be slashed.
+- **Zero-knowledge proofs**: For deterministic computations, validators can submit zkML proofs that verify the agent's output without revealing inputs.
+- **TEE attestations**: Validators running in trusted execution environments (SGX, TDX) can provide hardware-backed attestations.
 
-The standard is unopinionated. You choose the trust model that matches your risk.
+The standard is unopinionated about which model to use. Different agents, different stakes, different trust requirements. TBD TBD The registry just records what was validated, by whom, and the result.
+
+![ERC-8004 Registries](/public/registries.jpeg)
+
+> "Without ERC-8004, AI agents are just code. With it, they're accountable economic actors. This is the unlock."  
+> — **Davide Crapis**, Ethereum Foundation, Head of AI
 
 ## Already in Production
 
-Teams are already building on ERC-8004:
+During three months on testnet, the ecosystem registered **10,000+ agents** and exchanged **20,000+ feedback entries**. Community-built scanners, SDKs, and tooling emerged organically.
 
-- **Agent frameworks** like ElizaOS, Olas, and Virtuals are integrating 8004 identities so their agents can be discovered and rated across platforms
-- **Infrastructure providers** like Phala and EigenLayer are exploring validation backends for high-assurance agent tasks
-- **Wallets** like MetaMask and Coinbase are looking at agent identity as part of their user experience
+The ecosystem now spans agent frameworks, validation infrastructure, identity providers, DeFi protocols, and L2s. Teams are building TEE-based validation backends, ZK proof integrations, cross-chain identity bridges, and production SDKs in TypeScript and Python.
 
-During three months on testnet, the ecosystem registered **10,000+ agents** and exchanged **20,000+ feedback entries**. Multiple community-built scanners and SDKs emerged organically.
+> "Without ERC-8004, AI agents are just code. With it, they're accountable economic actors. This is the unlock."  
+> — **Sumeet Chougule**, Founder of ChaosChain
 
-## Security First
+![ERC-8004 Ecosystem](/public/ecosystem.jpg)
+
+
+## ERC-8004 is security first
 
 The contracts have been audited by **Cyfrin**, **Nethermind**, and the **Ethereum Foundation Security Team**. We incorporated findings from all three audits before mainnet deployment.
 
@@ -69,14 +93,14 @@ The standard integrates with [x402](https://www.x402.org/) for programmable paym
 
 ## Start Building
 
-**No-code options** — register your agent without writing code:
+**No-code options** - register your agent without writing code:
 
 - [8004scan.io](https://8004scan.io): Browse agents and reputation data
 - [agentscan.info](https://agentscan.info): Explore registered agents on-chain
 - [8004agents.ai](https://8004agents.ai): Discover AI agents in the ecosystem
 - [supermission.ai](https://supermission.ai): Agent mission tracking and insights
 
-**SDKs** — production-ready libraries:
+**SDKs** - production-ready libraries:
 
 - [ChaosChain SDK](https://docs.chaoscha.in/overview/quickstart): TypeScript, Python in development
 - [Agent0 SDK](https://sdk.ag0.xyz/): TypeScript and Python with guides
@@ -95,6 +119,7 @@ The standard integrates with [x402](https://www.x402.org/) for programmable paym
 - **Enhanced validation**: zkML integration, expanded TEE support
 - **Governance**: community-driven evolution of the standard
 - **Cross-chain**: agent identity and reputation across networks
+- Watch towers for reputation TBD TBD 
 
 The EIP remains in draft while we gather mainnet feedback. Finalization expected in the coming months.
 
@@ -105,7 +130,3 @@ The EIP remains in draft while we gather mainnet feedback. Finalization expected
 - [Ethereum Magicians Discussion](https://ethereum-magicians.org/t/erc-8004-trustless-agents)
 - [GitHub](https://github.com/erc-8004/erc-8004-contracts)
 - [team@8004.org](mailto:team@8004.org)
-
----
-
-The infrastructure for accountable AI agents is live. [Start building →](https://8004.org/build)
