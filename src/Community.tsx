@@ -91,50 +91,50 @@ function Community() {
             Voices from the teams building with open agent standards
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200 flex flex-col">
               <div className="text-[#4C2A85] text-4xl mb-4">"</div>
-              <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                ERC-8004 extends the 1386 agents registered in Virtuals ACP to the broader EVM family, accelerating a permissionless agentic economy.
+              <p className="text-[#3f3f46] mb-6 leading-relaxed flex-1">
+                ERC-8004 provides foundational infrastructure for agent-based economic systems through three independent registries. This cements the foundation of trustless agent ecosystem.
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                  <img src="/logos/altLayer.jpg" alt="AltLayer" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#18181b]">YQ</p>
+                  <p className="text-sm text-[#71717a]">AltLayer, Co-founder </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200 flex flex-col">
+              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
+              <p className="text-[#3f3f46] mb-6 leading-relaxed flex-1">
+                Without ERC-8004, AI agents are just code. With it, they're accountable economic actors. This is the unlock.
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
+                  <img src="/logos/ChaosChain.jpg" alt="Chaoschain" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#18181b]">Sumeet Chougule</p>
+                  <p className="text-sm text-[#71717a]">Chaoschain, Founder </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200 flex flex-col">
+              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
+              <p className="text-[#3f3f46] mb-6 leading-relaxed flex-1">
+                ERC-8004 extends the agents registered using Virtuals ACP to the broader EVM family, accelerating the development of a permissionless agentic economy.
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
                   <img src="/logos/Virtuals.jpg" alt="Virtuals" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="font-semibold text-[#18181b]">Wee Kee</p>
                   <p className="text-sm text-[#71717a]">Virtuals, Core Contributor</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
-              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
-              <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                ERC-8004 provides foundational infrastructure for agent-based economic systems through three independent registries: NFT-based identity, cryptographically verified reputation, and multi-party validation. This cements the foundation of trustless agent ecosystem.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                  <img src="/logos/AltLayer.jpg" alt="AltLayer" className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <p className="font-semibold text-[#18181b]">YQ</p>
-                  <p className="text-sm text-[#71717a]">AltLayer</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
-              <div className="text-[#4C2A85] text-4xl mb-4">"</div>
-              <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                Without ERC-8004, AI agents are just code. With it, they're accountable economic actors. This is the unlock.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                  <img src="/logos/ChaosChain.jpg" alt="Chaoschain" className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <p className="font-semibold text-[#18181b]">Sumeet Chougule</p>
-                  <p className="text-sm text-[#71717a]">Founder, Chaoschain</p>
                 </div>
               </div>
             </div>
