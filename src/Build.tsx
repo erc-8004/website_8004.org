@@ -109,6 +109,15 @@ function Build() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0 SDK</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed">
+                      TypeScript and Python SDKs with comprehensive guides.
+                    </p>
+                    <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View docs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">ChaosChain</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed">
                       TypeScript SDK with Python support in development.
@@ -118,17 +127,13 @@ function Build() {
                     </a>
                   </div>
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Agent0 SDK</h4>
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create-8004-agent</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed">
-                      TypeScript and Python SDKs with comprehensive guides.
+                      Alternative SDK approach from Daydreams AI.
                     </p>
-                    <div className="flex items-center gap-3">
-                     
-                     
-                      <a href="https://sdk.ag0.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                        View docs <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    </div>
+                    <a href="https://www.npmjs.com/package/create-8004-agent" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      View docs <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </div>
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Lucid Agents</h4>
@@ -136,15 +141,6 @@ function Build() {
                       Alternative SDK approach from Daydreams AI.
                     </p>
                     <a href="https://docs.daydreams.systems/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
-                      View docs <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
-                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create-8004-agent</h4>
-                    <p className="text-[#71717a] mb-5 leading-relaxed">
-                      Alternative SDK approach from Daydreams AI.
-                    </p>
-                    <a href="https://www.npmjs.com/package/create-8004-agent" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
                       View docs <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>

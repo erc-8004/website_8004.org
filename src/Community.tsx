@@ -94,15 +94,15 @@ function Community() {
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
               <div className="text-[#4C2A85] text-4xl mb-4">"</div>
               <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                ERC-8004 creates the trust layer we've been missing. It's the foundation for agent-to-agent commerce at scale.
+                ERC-8004 extends the 1386 agents registered in Virtuals ACP to the broader EVM family, accelerating a permissionless agentic economy.
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                  <img src="/olas.jpg" alt="Olas" className="w-full h-full object-cover" />
+                  <img src="/logos/Virtuals.jpg" alt="Virtuals" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[#18181b]">David Minarsch</p>
-                  <p className="text-sm text-[#71717a]">Olas</p>
+                  <p className="font-semibold text-[#18181b]">Wee Kee</p>
+                  <p className="text-sm text-[#71717a]">Virtuals, Core Contributor</p>
                 </div>
               </div>
             </div>
@@ -110,15 +110,15 @@ function Community() {
             <div className="bg-[#fafafa] rounded-2xl p-8 border border-[#e4e4e7] hover:border-[#4C2A85] transition-all duration-200">
               <div className="text-[#4C2A85] text-4xl mb-4">"</div>
               <p className="text-[#3f3f46] mb-6 leading-relaxed">
-                Open standards are how we build an ecosystem, not just products. This is infrastructure for the next decade.
+                ERC-8004 provides foundational infrastructure for agent-based economic systems through three independent registries: NFT-based identity, cryptographically verified reputation, and multi-party validation. This cements the foundation of trustless agent ecosystem.
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
-                  <img src="/phala.png" alt="Phala" className="w-full h-full object-cover" />
+                  <img src="/logos/AltLayer.jpg" alt="AltLayer" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[#18181b]">Marvin Tong</p>
-                  <p className="text-sm text-[#71717a]">Phala Network</p>
+                  <p className="font-semibold text-[#18181b]">YQ</p>
+                  <p className="text-sm text-[#71717a]">AltLayer</p>
                 </div>
               </div>
             </div>

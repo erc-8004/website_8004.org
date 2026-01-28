@@ -131,7 +131,17 @@ function BlogPost() {
       <section className="pt-6 pb-12 bg-white flex-1">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto prose prose-lg prose-zinc prose-headings:font-display prose-headings:text-[#18181b] prose-headings:mb-3 prose-headings:mt-8 prose-p:my-4 prose-a:text-[#4C2A85] prose-a:no-underline hover:prose-a:underline">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                a: ({ href, children }) => (
+                  <a href={href} target="_blank" rel="noopener noreferrer">
+                    {children}
+                  </a>
+                ),
+              }}
+            >
+              {post.content}
+            </ReactMarkdown>
           </div>
         </div>
       </section>

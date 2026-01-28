@@ -98,7 +98,13 @@ function Learn() {
         {
           id: 'reputation-2',
           question: 'How is feedback structured?',
-          answer: 'Feedback is signed by any clientAddress and targets the agent\'s agentId on the chain whose registry the feedback is recorded on. The same clientAddress can provide feedback to the same agent multiple times, so feedback on a chain is identified as: agentId:clientAddress:feedbackIndex\n\nA feedback entry includes an on-chain part:\n• score (a number between 0 and 100) (required)\n• tag1 and tag2, labels to add dimensions to the feedback (optional)\n• the exact endpoint/route of the service the feedback refers to (optional)\n• feedbackUri, a link to an off-chain file with additional feedback details (optional)\n\nIf you need to store more information, you can put it in the JSON linked by feedbackUri.',
+          answer: 'Feedback is signed by any clientAddress and targets the agent\'s agentId on the chain whose registry the feedback is recorded on. The same clientAddress can provide feedback to the same agent multiple times, so feedback on a chain is identified as: agentId:clientAddress:feedbackIndex\n\nA feedback entry includes:\n• value (int128) - the feedback score (required)\n• valueDecimals (uint8) - decimal precision for the value\n• tag1 and tag2 (string) - labels to add dimensions to the feedback (optional)\n• endpoint (string) - the exact endpoint/route of the service the feedback refers to (optional)\n• feedbackURI (string) - a link to an off-chain file with additional feedback details (optional)\n• feedbackHash (bytes32) - hash of the off-chain content for integrity verification (optional)\n\nIf you need to store more information, you can put it in the JSON linked by feedbackURI and verify its integrity with feedbackHash.',
+        },
+        {
+          id: 'reputation-2b',
+          question: 'What are the reputation use cases?',
+          answer: 'The tag1 field defines what the value measures. Common examples:\n\n• starred - Quality rating\n• reachable - Endpoint reachable\n• ownerVerified - Endpoint owned by agent owner\n• uptime - Endpoint uptime %\n• successRate - Endpoint success rate %\n• responseTime - Response time in ms\n• blocktimeFreshness - Avg block delay in blocks\n• revenues - Cumulative revenues\n• tradingYield - Yield with tag2 for period (day, week, month, year)',
+          link: { text: 'You can read more about Reputation use cases in the best practices document', url: 'https://github.com/erc-8004/best-practices/blob/main/Reputation.md' },
         },
         {
           id: 'reputation-3',
@@ -219,7 +225,16 @@ function Learn() {
                               </div>
                             </div>
                           ) : (
-                            <p className="text-[#3f3f46] text-sm sm:text-base leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                            <div>
+                              <p className="text-[#3f3f46] text-sm sm:text-base leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                              {faq.link && (
+                                <p className="mt-4">
+                                  <a href={faq.link.url} target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] underline text-sm sm:text-base">
+                                    {faq.link.text} →
+                                  </a>
+                                </p>
+                              )}
+                            </div>
                           )}
                         </div>
                       </div>
