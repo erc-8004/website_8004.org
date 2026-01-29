@@ -1,5 +1,31 @@
 [
- 
+  {
+    "id": "8004-launch-day",
+    "title": "8004 Launch Day",
+    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/event-covers/y9/df715a8a-6f33-4502-b518-9e2f2fb264b1.jpg",
+    "date": "03/03/26",
+    "url": "https://luma.com/658en7zs",
+    "created_at": "2026-01-19T00:00:00Z",
+    "updated_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "id": "agentic-brunch",
+    "title": "Agentic Brunch - ERC-8004",
+    "img_url": "PLACEHOLDER",
+    "date": "25/02/26",
+    "url": "https://luma.com/j57z0k64",
+    "created_at": "2026-01-19T00:00:00Z",
+    "updated_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "id": "builder-nights-denver",
+    "title": "Builder Nights Denver",
+    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/event-covers/11/d0a18161-48ed-480e-ab2c-64938004f1ae.png",
+    "date": "17/02/26",
+    "url": "https://luma.com/bndenver",
+    "created_at": "2026-01-19T00:00:00Z",
+    "updated_at": "2026-01-19T00:00:00Z"
+  },
   {
     "id": "trustless-agent-day",
     "title": "Trustless Agent Day (Yellow Pavilion, M2 Stage, La Rural - You Need A Devconnect Ticket!)",
@@ -34,15 +60,6 @@
     "date": "23/09/25",
     "url": "https://luma.com/do1lt7vq",
     "created_at": "2025-01-16T00:00:00Z",
-    "updated_at": "2025-01-16T00:00:00Z"
-  },
-  {
-    "id": "trustless-agent-day",
-    "title": "Trustless Agent Day (Yellow Pavilion, M2 Stage, La Rural - You Need A Devconnect Ticket!)",
-    "img_url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/ma/b3d60fee-0d9e-4bbf-92fe-4df6ecbbf61c.png",
-    "date": "21/11/26",
-    "url": "https://luma.com/i1vu0n7p",
-    "created_at": "2026-02-16T00:00:00Z",
-    "updated_at": "2026-02-16T00:00:00Z"
+    "updated_at": "2025-01-16T00:00:00Z"  
   }
 ]
