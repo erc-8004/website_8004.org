@@ -58,7 +58,7 @@ The Validation registry isn’t currently on Mainnet and will be deployed in the
 
 > Ethereum is in the unique position to be the platform that secures and settles AI-to-AI interactions." — **Davide Crapis**, Ethereum Foundation, Head of AI
 
-![image.png](/public/blog/registries.png)
+![ERC-8004 Registries](/blog/registries.png)
 
 ## Already in production
 
@@ -73,7 +73,7 @@ Together with [x402](https://www.x402.org/), ERC-8004 lays the foundation for an
 > Without ERC-8004, AI agents are just code. With it, they're accountable economic actors. This is the unlock." — **Sumeet Chougule**, Founder of ChaosChain
 > 
 
-![image.png](/public/blog/ecosystem.jpg)
+![ERC-8004 Ecosystem](/blog/ecosystem.jpg)
 
 ## Where it's live
 
