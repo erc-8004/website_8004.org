@@ -169,9 +169,9 @@ function Build() {
                     <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
                       Build an AI Agent from scratch using the ERC-8004 standard.
                     </p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto">
+                    <a href="https://github.com/Eversmile12/erc-8004-demo-agent" target="_blank" rel="noopener noreferrer" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto text-center block">
                       View Demo
-                    </button>
+                    </a>
                   </div>
 
                   <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
@@ -182,21 +182,21 @@ function Build() {
                     <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
                       Build an explorer to browse agents and their reputation on-chain.
                     </p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto">
+                    <a href="https://github.com/Eversmile12/erc-8004-agents-explorer-demo" target="_blank" rel="noopener noreferrer" className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto text-center block">
                       View Demo
-                    </button>
+                    </a>
                   </div>
 
-                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] hover:border-[#4C2A85] transition-colors duration-200 card-shadow hover:card-shadow-hover flex flex-col">
+                  <div className="bg-white rounded-2xl p-6 border border-[#e4e4e7] transition-colors duration-200 card-shadow flex flex-col opacity-60">
                     <div className="aspect-[5/4] bg-[#fafafa] rounded-xl mb-6 flex items-center justify-center border border-[#e4e4e7] overflow-hidden">
                       <img src="/hf_20260116_112802_85fcb600-851a-4cea-9d76-6f317e5125e5-2.png" alt="Create 8004 x x402 agent on Coinbase" className="w-full h-full object-cover" />
                     </div>
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">Create an ERC-8004 agent with x402</h4>
                     <p className="text-[#71717a] mb-6 leading-relaxed flex-1">
-                      Utilized ERC-8004 with x402, a standard for programmable payments on Ethereum.
+                      Utilize ERC-8004 with x402, a standard for programmable payments on Ethereum.
                     </p>
-                    <button className="border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 w-full bg-white mt-auto">
-                      View Demo
+                    <button disabled className="border border-[#e4e4e7] text-[#a1a1aa] px-6 py-2.5 rounded-xl text-sm font-semibold w-full bg-[#fafafa] mt-auto cursor-not-allowed">
+                      Coming Soon
                     </button>
                   </div>
                 </div>
