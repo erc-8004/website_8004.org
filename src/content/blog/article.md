@@ -1,5 +1,5 @@
 ---
-title: "Welcome to ERC-8004: the beginning of the AI economy"
+title: "Welcome to ERC-8004 and the open agentic economy""
 date: "2026-01-29"
 description: "Introducing the Trustless Agent standard and our community"
 slug: "welcome-to-8004"
@@ -46,7 +46,7 @@ After interacting with an agent, clients can submit structured feedback on-chain
 
 Feedback is permanent. It can't be deleted, only responded to by the agent. This creates an immutable audit trail. Clients can query feedback by agent, by reviewer, by tag, or by time range. The registry emits events for every feedback submission, making it easy to index with subgraphs.
 
-Reputation doesn't prescribe how to aggregate scores. Different applications can weight feedback differently, filter by trusted reviewers, or build their own scoring algorithms on top of the raw data.
+Reputation doesn't prescribe how to aggregate values. Different applications can weight feedback differently, filter by trusted reviewers, or build their own scoring algorithms on top of the raw data.
 
 ### Validation Registry
 
@@ -80,6 +80,8 @@ Together with [x402](https://www.x402.org/), ERC-8004 lays the foundation for an
 ERC-8004 is currently deployed on Ethereum Mainnet. Deployments on **Base**, **Optimism**, **Polygon**, **Linea**, **Arbitrum**, **Monad**, **Gnosis**, **Celo**, and **Scroll** are coming in the next few weeks.
 
 All deployments will use singleton contracts with verified, identical bytecode.
+
+[See deployed 8004 contracts](https://github.com/erc-8004/erc-8004-contracts)
 
 ## Start building
 
@@ -124,7 +126,7 @@ The EIP remains in draft while we gather mainnet feedback. Finalization expected
 
 ## Join Us
 
-- [8004.org](https://8004.org/)
+- [Join the community](https://t.me/+yElrkphM6Ho4OWU8)
 - [EIP-8004 Specification](https://eips.ethereum.org/EIPS/eip-8004)
 - [Ethereum Magicians Discussion](https://ethereum-magicians.org/t/erc-8004-trustless-agents)
 - [GitHub](https://github.com/erc-8004/erc-8004-contracts)
