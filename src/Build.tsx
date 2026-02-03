@@ -29,7 +29,7 @@ function Build() {
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#18181b]">No code solutions</h3>
                 <p className="text-lg text-[#71717a] mb-8">
                 Register Trustless Agent without writing code. Browse hundreds of agents and their reputation on the following scanners                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
                     <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">8004scan.io</h4>
                     <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
@@ -57,6 +57,15 @@ function Build() {
                       Visit <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
+                  <div className="bg-white rounded-xl p-6 border border-[#e4e4e7]">
+                    <h4 className="font-display text-xl font-bold mb-3 text-[#18181b]">trust8004.xyz</h4>
+                    <p className="text-[#71717a] mb-5 leading-relaxed text-sm">
+                      Discover and manage AI agents registered on-chain.
+                    </p>
+                    <a href="https://www.trust8004.xyz/" target="_blank" rel="noopener noreferrer" className="text-[#4C2A85] hover:text-[#412471] font-semibold inline-flex items-center gap-1 text-sm">
+                      Visit <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,6 +82,7 @@ function Build() {
                     { name: 'Base', logo: '/logos/chainLogos/base-mainnet.jpg', comingSoon: false },
                     { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: false },
                     { name: 'Monad', logo: '/logos/chainLogos/monad.jpg', comingSoon: false },
+                    { name: 'BNB Chain', logo: '/logos/chainLogos/bnb-bnb-logo.png', comingSoon: false },
                     { name: 'Linea', logo: '/logos/chainLogos/linea-mainnet.svg', comingSoon: true },
                     { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: true },
                     { name: 'Optimism', logo: '/logos/chainLogos/optimism.jpg', comingSoon: true },
