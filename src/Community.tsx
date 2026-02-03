@@ -4,13 +4,6 @@ import CoAuthoredBy from './CoAuthoredBy';
 import Footer from './Footer';
 
 function Community() {
-  const scrollToEvents = () => {
-    const eventsSection = document.getElementById('community-events');
-    if (eventsSection) {
-      eventsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#3f3f46] flex flex-col">
       <section className="relative pt-40 pb-28 bg-white overflow-hidden">
@@ -52,12 +45,12 @@ function Community() {
                 Join Community
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <button
-                onClick={scrollToEvents}
+              <a
+                href="#events"
                 className="bg-white border border-[#e4e4e7] text-[#18181b] hover:border-[#4C2A85] hover:text-[#4C2A85] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-150 card-shadow hover:card-shadow-hover"
               >
                 See Events
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -255,7 +248,7 @@ function Community() {
 
       <CoAuthoredBy />
 
-      <section id="community-events" className="py-24 bg-white">
+      <section id="events" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <CommunityEvents />
         </div>

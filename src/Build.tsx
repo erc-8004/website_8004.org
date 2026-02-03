@@ -70,12 +70,12 @@ function Build() {
                 <div className="flex flex-wrap justify-center gap-12 mb-8 max-w-5xl mx-auto">
                   {[
                     { name: 'Ethereum', logo: '/logos/chainLogos/eth-mainnet.svg', comingSoon: false },
-                    { name: 'Base', logo: '/logos/chainLogos/base-mainnet.jpg', comingSoon: true },
-                    { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: true },
+                    { name: 'Base', logo: '/logos/chainLogos/base-mainnet.jpg', comingSoon: false },
+                    { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: false },
+                    { name: 'Monad', logo: '/logos/chainLogos/monad.jpg', comingSoon: false },
                     { name: 'Linea', logo: '/logos/chainLogos/linea-mainnet.svg', comingSoon: true },
                     { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: true },
                     { name: 'Optimism', logo: '/logos/chainLogos/optimism.jpg', comingSoon: true },
-                    { name: 'Monad', logo: '/logos/chainLogos/monad.jpg', comingSoon: true },
                     { name: 'Scroll', logo: '/logos/chainLogos/scroll.jpg', comingSoon: true },
                     { name: 'Gnosis', logo: '/logos/chainLogos/gnosis.jpg', comingSoon: true },
                     { name: 'Celo', logo: '/logos/chainLogos/celo.jpg', comingSoon: true },
