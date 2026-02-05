@@ -80,18 +80,18 @@ function Build() {
                   {[
                     { name: 'Ethereum', logo: '/logos/chainLogos/eth-mainnet.svg', comingSoon: false },
                     { name: 'Base', logo: '/logos/chainLogos/base-mainnet.jpg', comingSoon: false },
+                    { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: false },
+                    { name: 'Celo', logo: '/logos/chainLogos/celo.jpg', comingSoon: false },
+                    { name: 'Gnosis', logo: '/logos/chainLogos/gnosis.jpg', comingSoon: false },
                     { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: false },
+                    { name: 'Scroll', logo: '/logos/chainLogos/scroll.jpg', comingSoon: false },
+                    { name: 'Taiko', logo: '/logos/chainLogos/taiko.png', comingSoon: false },
                     { name: 'Monad', logo: '/logos/chainLogos/monad.jpg', comingSoon: false },
                     { name: 'BNB Chain', logo: '/logos/chainLogos/bnb-bnb-logo.png', comingSoon: false },
-                    { name: 'Scroll', logo: '/logos/chainLogos/scroll.jpg', comingSoon: false },
-                    { name: 'Gnosis', logo: '/logos/chainLogos/gnosis.jpg', comingSoon: false },
                     { name: 'Linea', logo: '/logos/chainLogos/linea-mainnet.svg', comingSoon: true },
-                    { name: 'Arbitrum', logo: '/logos/chainLogos/arb-mainnet.svg', comingSoon: true },
                     { name: 'Optimism', logo: '/logos/chainLogos/optimism.jpg', comingSoon: true },
                     { name: 'Avalanche', logo: '/logos/chainLogos/avalanche.png', comingSoon: true },
                     { name: 'Abstract', logo: '/logos/chainLogos/abstract.jpg', comingSoon: true },
-                    { name: 'Celo', logo: '/logos/chainLogos/celo.jpg', comingSoon: true },
-                    { name: 'Taiko', logo: '/logos/chainLogos/taiko.png', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
                       <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
