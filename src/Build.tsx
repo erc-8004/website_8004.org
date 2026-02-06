@@ -92,6 +92,7 @@ function Build() {
                     { name: 'BNB Chain', logo: '/logos/chainLogos/bnb-bnb-logo.png', comingSoon: false },
                     { name: 'Optimism', logo: '/logos/chainLogos/optimism.jpg', comingSoon: true },
                     { name: 'Abstract', logo: '/logos/chainLogos/abstract.jpg', comingSoon: true },
+                    { name: 'X Layer', logo: '/logos/chainLogos/xlayer.jpeg', comingSoon: true },
                     { name: 'MegaETH', logo: '/logos/chainLogos/megaeth.jpeg', comingSoon: true },
                     { name: 'Mantle', logo: '/logos/chainLogos/mantle.png', comingSoon: true },
                     { name: 'Starknet', logo: '/logos/chainLogos/starknet.png', comingSoon: true },
@@ -99,7 +100,6 @@ function Build() {
                     { name: 'Soneium', logo: '/logos/chainLogos/soneium.jpg', comingSoon: true },
                     { name: 'Metis', logo: '/logos/chainLogos/metis.png', comingSoon: true },
                     { name: 'Goat Network', logo: '/logos/chainLogos/goat.png', comingSoon: true },
-                    { name: 'X Layer', logo: '/logos/chainLogos/xlayer.jpeg', comingSoon: true },
                   ].map((chain, index) => (
                     <div key={index} className="flex flex-col items-center gap-3">
                       <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center overflow-hidden transition-colors duration-200 ${chain.comingSoon ? 'bg-[#f4f4f5] border-[#e4e4e7] opacity-50' : 'bg-white border-[#e4e4e7] hover:border-[#4C2A85]'}`}>
