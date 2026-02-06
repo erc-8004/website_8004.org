@@ -17,21 +17,21 @@ function Community() {
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">700+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">14,000+</div>
                 <p className="text-[#71717a] leading-relaxed">
                   Registered agents
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">300+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">21</div>
                 <p className="text-[#71717a] leading-relaxed">
-                  Exchanged feedback
+                  Chains
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">200+</div>
+                <div className="font-display text-4xl md:text-5xl font-bold mb-4 text-[#4C2A85]">20,000+</div>
                 <p className="text-[#71717a] leading-relaxed">
-                  Builders
+                  Exchanged feedback
                 </p>
               </div>
             </div>
@@ -183,7 +183,7 @@ function Community() {
               { name: 'LineaBuild', img: '/logos/LineaBuild.png' },
               { name: 'Lyneth', img: '/logos/Lyneth.jpg' },
               { name: 'Mcpay Tech', img: '/logos/Mcpay Tech.jpg' },
-              { name: 'Metamask', img: '/logos/Metamask.jpg' },
+              { name: 'Metamask', img: '/metamask.webp' },
               { name: 'MinaraAI', img: '/logos/MinaraAI.jpg' },
               { name: 'Near Protocol', img: '/logos/Near Protocol.jpg' },
               { name: 'Nevermined', img: '/logos/Nevermined.jpg' },
