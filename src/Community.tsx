@@ -183,7 +183,7 @@ function Community() {
               { name: 'LineaBuild', img: '/logos/LineaBuild.png' },
               { name: 'Lyneth', img: '/logos/Lyneth.jpg' },
               { name: 'Mcpay Tech', img: '/logos/Mcpay Tech.jpg' },
-              { name: 'Metamask', img: '/metamask.webp' },
+              { name: 'MetaMask', img: '/metamask.webp' },
               { name: 'MinaraAI', img: '/logos/MinaraAI.jpg' },
               { name: 'Near Protocol', img: '/logos/Near Protocol.jpg' },
               { name: 'Nevermined', img: '/logos/Nevermined.jpg' },

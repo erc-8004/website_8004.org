@@ -1,6 +1,6 @@
 function CoAuthoredBy() {
   const organizations = [
-    { name: 'Metamask', img: '/metamask.webp' },
+    { name: 'MetaMask', img: '/metamask.webp' },
     { name: 'Ethereum Foundation', img: '/logos/chainLogos/eth-mainnet.svg' },
     { name: 'Google', img: '/google.jpg' },
     { name: 'Coinbase', img: '/coinbase.png' },
