@@ -92,6 +92,7 @@ function Build() {
                     { name: 'Optimism', logo: '/logos/chainLogos/optimism.jpg', comingSoon: false },
                     { name: 'Polygon', logo: '/logos/chainLogos/matic-mainnet.svg', comingSoon: false },
                     { name: 'Scroll', logo: '/logos/chainLogos/scroll.jpg', comingSoon: false },
+                    { name: 'Shape', logo: '/logos/chainLogos/shape.png', comingSoon: false },
                     { name: 'SKALE', logo: '/logos/chainLogos/skale.png', comingSoon: false },
                     { name: 'Soneium', logo: '/logos/chainLogos/soneium.jpg', comingSoon: false },
                     { name: 'Taiko', logo: '/logos/chainLogos/taiko.png', comingSoon: false },
